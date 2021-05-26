@@ -1,0 +1,20 @@
+-------------------- Auto-Git Log --------------------
+		Thu May 13 2021 16:52:52 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* homepage.html
+
+
+Created files:
+* .autogit/logs/log-13-4-2021-16-22-33.txt
+* "images/Nha Rieng Le (Desktop).zip"
+* images/arrow-left/icon/outlined/ctrl-arrow/left.svg
+* images/arrrow.svg
+* images/banner-slick.png
+
+
+Deleted files:
+
+
+Renamed files:

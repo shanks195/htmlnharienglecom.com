@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Wed May 19 2021 08:44:58 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* components.html
+* homepage.html
+
+
+Created files:
+* "images/Nha Rieng Le (Desktop).zip"
+* images/slide-cricle-right.svg
+
+
+Deleted files:
+
+
+Renamed files:

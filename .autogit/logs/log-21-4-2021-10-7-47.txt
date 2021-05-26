@@ -1,0 +1,15 @@
+-------------------- Auto-Git Log --------------------
+		Fri May 21 2021 10:07:47 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* homepage.html
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:

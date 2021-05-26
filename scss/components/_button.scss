@@ -1,0 +1,211 @@
+$btn-height: 48px;
+.btn {
+  background-color: $primary-color;
+  color: $white;
+  font-size: $font-size;
+  height: $btn-height;
+  transition: $transition;
+  border-radius: $base-radius;
+  padding: 0 15px;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  &.thick{
+    border-width:2px;
+    &:hover, &:focus, &:active{
+      border-width:2px !important;
+    }
+  }
+}
+.btn-large {
+  height: $btn-height + 8px;
+}
+.btn-primary {
+  background-color: $primary-color;
+  &:hover {
+    background-color: darken($primary-color, 10%);
+    color: white;
+  }
+}
+.btn-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  img.active {
+    display: none;
+  }
+  &:hover {
+    img:not(.active) {
+      display: none;
+    }
+    img.active {
+      display: inline-block;
+    }
+  }
+  &.active {
+    img:not(.active) {
+      display: none;
+    }
+    img.active {
+      display: inline-block;
+    }
+  }
+}
+
+.btn-raw-secondary {
+  color: $secondary-color;
+  font-weight: 500;
+  &:hover, &:focus, &:active {
+    @include backgroundFade($orange, 0.1);
+    color: $secondary-color;
+  }
+}
+
+.btn-secondary {
+  background-color: $secondary-color;
+  &:hover, &:focus, &:active {
+    background-color: darken($secondary-color, 10%);
+  }
+}
+
+.btn-orange {
+  background-color: $orange;
+  &:hover, &:focus, &:active {
+    background-color: darken($orange, 10%);
+    color: $white !important;
+  }
+}
+
+.btn-smaller {
+  height: $btn-height - 8px;
+  line-height: $btn-height - 8px;
+}
+
+.btn-xs-smaller {
+    @include media-breakpoint-down(md) {
+    height: $btn-height - 8px;
+    line-height: $btn-height - 8px;
+  }
+}
+
+.btn-tiny {
+  height: $btn-height - 12px;
+  line-height: $btn-height - 12px;
+}
+
+.btn-outline-secondary {
+  background-color: transparent;
+  color: $secondary-color;
+  border: 1px solid $secondary-color;
+  &:hover, &:focus, &:active {
+    color: $white !important;
+    background-color: $secondary-color !important;
+    border: 1px solid $secondary-color!important;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem lighten($secondary-color, 30%) !important;
+  }
+}
+
+.btn-outline-orange {
+  background-color: $white;
+  color: $orange;
+  border: 1px solid $orange;
+  &:hover, &:focus, &:active {
+    color: $white;
+    background-color: $orange;
+    border: 1px solid $orange;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem lighten($orange, 30%);
+  }
+}
+.btn-outline-primary {
+  background-color: transparent;
+  color: $white;
+  border: 1px solid $white;
+  &:hover, &:focus, &:active {
+    color: $primary-color;
+    background-color: $white;
+    border: 1px solid $primary-color;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem lighten($orange, 30%);
+  }
+}
+.btn-outline-gray {
+  background-color: $white;
+  color: $black;
+  border: 1px solid #DDD;
+  &:hover, &:focus, &:active {
+    background-color: #DDD;
+    border: 1px solid #DDD;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem lighten(#DDD, 10%);
+  }
+}
+
+.btn-outline-gray-2 {
+  background-color: $white;
+  color: $black;
+  border: 1px solid #CCC;
+  &:hover, &:focus, &:active {
+    background-color: #CCC;
+    border: 1px solid #CCC;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem lighten(#CCC, 10%);
+  }
+}
+.hover-y-btn {
+  transition: color 0.4s, background-color 0.4s, transform 0.8s;
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.btn-gray {
+  background-color: #DDD;
+  color: inherit;
+  &:hover, &:focus, &:active {
+    background-color: darken(#DDD, 10%);
+  }
+}
+
+.btn-light-gray {
+  background-color: #F1F1F1;
+  color: inherit;
+  &:hover, &:focus, &:active {
+    background-color: darken(#F1F1F1, 10%);
+  }
+}
+
+.btn-outline-main {
+  background-color: transparent;
+  color: $primary-color;
+  border: 1px solid $primary-color;
+  &:hover, &:focus, &:active {
+    color: $white !important;
+    background-color: $primary-color !important;
+    border: 1px solid $primary-color!important;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem lighten($secondary-color, 30%) !important;
+  }
+} 
+
+.btn-outline-black {
+  background-color: transparent;
+  color: $text-base;
+  border: 1px solid $text-base;
+  &:hover, &:focus, &:active {
+    color: $white !important;
+    background-color: $text-base !important;
+    border: 1px solid $text-base !important;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem lighten($secondary-color, 30%) !important;
+  }
+}

@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Thu May 20 2021 14:20:47 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* components.html
+* scss/app.scss
+* scss/prepros.config
+
+
+Created files:
+* .autogit/logs/log-20-4-2021-13-50-28.txt
+* scss/app.scss.map
+
+
+Deleted files:
+
+
+Renamed files:

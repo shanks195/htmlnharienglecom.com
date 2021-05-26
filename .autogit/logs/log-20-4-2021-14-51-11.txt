@@ -1,0 +1,23 @@
+-------------------- Auto-Git Log --------------------
+		Thu May 20 2021 14:51:11 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* components.html
+* homepage.html
+
+
+Created files:
+* .autogit/logs/log-20-4-2021-14-20-47.txt
+* images/ajax-loader.gif
+* images/fonts/slick.eot
+* images/fonts/slick.svg
+* images/fonts/slick.ttf
+* images/fonts/slick.woff
+* js/jquery.js
+
+
+Deleted files:
+
+
+Renamed files:

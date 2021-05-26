@@ -1,0 +1,80 @@
+.form-group{
+  label{
+  }
+  .form-control {
+    min-height: 40px;
+    border-radius: 4px;
+    border: 1px solid $form-border;
+    font-size: 16px;
+    outline: none;
+    &:focus {
+      box-shadow: none;
+    }
+    &.bg-white {
+      color: $text-base !important;
+      &::placeholder {
+        color: $text-base !important;
+      }
+      &:focus {
+        background-color: #fff !important;
+      }
+    }
+    option{
+      color: $text-base;
+    }
+  }
+  &.text-base {
+    select option {
+      color: $text-base;
+    }
+  }
+}
+
+.form-large.form-group {
+  .form-control {
+    min-height: 48px;
+  }
+}
+
+.form-larger.form-group {
+  .form-control {
+    min-height: 56px;
+  }
+}
+
+.form-xs-smaller {
+  @include media-breakpoint-down(md) {
+    .form-control {
+    min-height: 40px !important;
+  }
+  }
+}
+
+.subscribe-form {
+  display: flex;
+  input {
+    border-radius: 8px 0 0 8px !important;
+    background-color: #F2F2F2;
+    background-image: url('../images/icon-mail-gray.svg');
+    background-repeat: no-repeat;
+    background-position: top 12px left 10px;
+    padding-left: 45px;
+    border: none !important;
+    @include media-breakpoint-down(md) {
+      min-height: 40px !important;
+      background-position: top 8px left 10px;
+    }
+    &:active, &:focus {
+      background-color: #F2F2F2;
+    }
+  }
+  button {
+    width: 100px;
+    border-radius: 0 8px 8px 0 !important;
+    @include media-breakpoint-down(md) {
+      width: 40px;
+      height: 40px;
+       padding: 0;
+    }
+  }
+}

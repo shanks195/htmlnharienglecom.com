@@ -1,0 +1,120 @@
+.bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-primary {
+    background-color: $primary-color!important;
+}
+
+.bg-transparent {
+    background-color: transparent !important;
+}
+
+.bg-light-gray {
+    background-color: $light-gray !important;
+}
+
+.bg-black {
+    background-color: black !important;
+}
+
+.bg-white {
+    background-color: white !important;
+}
+
+.bg-light-gray {
+    background-color: $light-gray;
+}
+
+.bg-light-brown {
+    background-color: $light-brown;
+}
+
+.bg-gray-contact {
+    background-color: #ECECEC;
+}
+
+.bg-light-dark {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.bg-no-repeat {
+    background: no-repeat !important;
+}
+
+.bg-secondary {
+    background-color: $secondary-color!important;
+}
+.bg-gray-1 {
+    background-color: $gray-1!important;
+}
+
+.page-item:hover {
+   
+    background-color: #007bff;
+}
+.page-item:hover a {
+    color: #fff;
+}
+.btn.btn-text:hover  {
+    background-color: #0046b8;
+    color: white;
+}
+
+.breadcrumb.breadcrumb-icon .breadcrumb-item+.breadcrumb-item:before {
+    content: url(../images/icon-arrow-white.svg);
+    color: #333333;
+}
+.bg-tranparent.page-link {
+    background-color:transparent!important;
+}
+.border-none {
+    border: none!important;
+}
+.bg-light-brown {
+    background-color:#f2f2f2;
+}
+a:hover .fb-gray {
+    display: none;
+}
+a:hover .fb-color {
+    display: inline-block!important;
+}
+a:hover .instagram-gray {
+    display: none;
+}
+a:hover .instagram-color {
+    display: inline-block!important;
+}
+a:hover .youtube-gray {
+    display: none;
+}
+.bg-grite {
+    background-color:#E0E0E0;
+}
+a:hover .youtube-color {
+    display: inline-block!important;
+}
+@include media-breakpoint-down(md) {
+    
+    .bg-xs-none {
+        background-image: none!important;
+    }
+    .bg-xs-white {
+        background-color: $white!important;
+    }
+    .bg-xs-transparent {
+        background-color: transparent!important;
+    }
+    .bg-xs-gray-1 {
+        background-color: $gray-1!important;
+    }
+    .bg-xs-primary {
+        background-color: $primary-color!important;
+    }
+    .bg-xs-secondary {
+        background-color: rgb(243, 119, 33, 0.05) !important;
+    }
+}

@@ -1,0 +1,35 @@
+$border-radius-select-box: 4px;
+.select2-container{
+	height: 40px !important;
+	background: $white;
+	margin-top: 4px;
+	border-radius: $border-radius-select-box;
+	&.select2 {
+		border: 1px solid $form-border;
+	}
+	.select2-selection__arrow {
+		b {
+			width: 14px !important;
+			height: 8px !important;
+			background-image: url('../images/icon-arrow-down.svg') !important;
+		}
+	}
+	&.select2-container--open {
+		.select2-selection__arrow {
+			b {
+				background-image: url('../images/icon-arrow-up.svg') !important;
+			}
+		}
+		.select2-selection--single {
+			background-color: $white !important;
+			border-radius: $border-radius-select-box !important;
+		}
+	}
+}
+.select2-selection--single {
+	height: 40px !important;
+		.select2-selection__rendered {
+		height: 40px !important;
+		line-height: 40px !important;
+	}
+}

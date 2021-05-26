@@ -1,0 +1,21 @@
+-------------------- Auto-Git Log --------------------
+		Thu May 20 2021 16:22:11 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* components.html
+* homepage.html
+* scss/_variables.scss
+* scss/utilities/_shadow.scss
+* scss/utilities/_text.scss
+
+
+Created files:
+* .autogit/logs/log-20-4-2021-15-51-47.txt
+* images/projcet-ds/img-bds.png
+
+
+Deleted files:
+
+
+Renamed files:

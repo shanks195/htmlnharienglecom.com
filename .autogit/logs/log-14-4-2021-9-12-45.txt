@@ -1,0 +1,29 @@
+-------------------- Auto-Git Log --------------------
+		Fri May 14 2021 09:12:45 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* css/app.css
+* css/app.css.map
+* homepage.html
+* scss/_class.scss
+* scss/utilities/_spacing.scss
+
+
+Created files:
+* .autogit/logs/log-14-4-2021-8-42-22.txt
+* css/ajax-loader.gif
+* css/fonts/slick.eot
+* css/fonts/slick.svg
+* css/fonts/slick.ttf
+* css/fonts/slick.woff
+* css/slick-theme.css
+* css/slick.css
+* images/banner/banner-img-mobile.png
+* js/slick.js
+
+
+Deleted files:
+
+
+Renamed files:

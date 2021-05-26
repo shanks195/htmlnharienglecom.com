@@ -1,0 +1,17 @@
+.shadow-1 {
+    box-shadow: $shadow;
+}
+
+.shadow-2 {
+    box-shadow: $shadow2;
+}
+
+.shadow3 {
+    box-shadow: $shadow3;
+}
+
+@include media-breakpoint-down(md) {
+    .shadow-xs-2 {
+        box-shadow: $shadow2;
+    }
+}

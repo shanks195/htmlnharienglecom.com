@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Tue May 18 2021 09:07:58 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* homepage.html
+* scss/_class.scss
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:

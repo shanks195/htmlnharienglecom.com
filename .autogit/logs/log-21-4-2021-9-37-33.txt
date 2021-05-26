@@ -1,0 +1,25 @@
+-------------------- Auto-Git Log --------------------
+		Fri May 21 2021 09:37:33 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* css/app.css
+* css/app.css.map
+* homepage.html
+* prepros.config
+* scss/_class.scss
+* scss/app.scss
+* scss/prepros.config
+* scss/utilities/_spacing.scss
+
+
+Created files:
+* .autogit/logs/log-21-4-2021-8-40-20.txt
+* images/thongtin/img-project.png
+
+
+Deleted files:
+* scss/app.scss.map
+
+
+Renamed files:

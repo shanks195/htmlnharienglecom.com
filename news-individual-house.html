@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tin Tức</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="css/jquery-ui.min.css" />
+        <link rel="stylesheet" href="css/app.css?v=1" />
+    </head>
+    <body>  
+        <header>
+            <div class="container">
+                <div class="header-left">
+                    <a href="#" class="mr-20" target="_self" title="Logo">
+                        <img src="./images/sx.svg" data-src="./images/logo.svg" alt="Logo" title="Logo" class="lazyload" />
+                    </a>
+                    <div class="menu-header-mobile">
+                        <div class="overlay d-lg-none"></div>
+                        <div class="menu-header-wrapper">
+                            <a href="#" class="pl-15 pt-10 d-inline-block d-lg-none" target="_self" title="Logo">
+                                <img src="./images/sx.svg" data-src="./images/logo.svg" alt="Logo" title="Logo" class="lazyload" />
+                            </a>
+                            <a href="javascript:void(0)" id="close-mobile-menu" class="float-right mr-20 mt-20 d-lg-none" target="_self" title="Close">
+                                <img src="./images/sx.svg" data-src="./images/icon-close.svg" alt="Close" title="Close" class="lazyload" />
+                            </a>
+                            <hr class="d-lg-none" />
+                            <div class="row px-15 d-lg-none">
+                                <div class="col-6">
+                                    <a href="#" target="_self" title="Đăng nhập" class="btn btn-block btn-smaller btn-outline-black">Đăng nhập</a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" target="_self" title="Đăng nhập" class="btn btn-block btn-smaller btn-outline-main">Đăng ký</a>
+                                </div>
+                            </div>
+                            <hr class="mb-0 d-lg-none" />
+                            <ul class="menu-header px-xs-15">
+                                <li class="d-block d-lg-none">
+                                    <a href="#" target="_self" title="Trang chủ">Trang chủ</a>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="javascript:void(0)" target="_self" title="Mua & Bán">Mua & Bán</a>
+                                    <ul class="dropdown-menu-header">
+                                        <li><a href="#" target="_self" title="Mua & Bán 1">Mua & Bán 1</a></li>
+                                        <li><a href="#" target="_self" title="Mua & Bán 2">Mua & Bán 2</a></li>
+                                        <li><a href="#" target="_self" title="Mua & Bán 3">Mua & Bán 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="javascript:void(0)" target="_self" title="Thuê">Thuê</a>
+                                    <ul class="dropdown-menu-header">
+                                        <li><a href="#" target="_self" title="Thuê 1">Thuê 1</a></li>
+                                        <li><a href="#" target="_self" title="Thuê 2">Thuê 2</a></li>
+                                        <li><a href="#" target="_self" title="Thuê 3">Thuê 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="javascript:void(0)" target="_self" title="Dự án">Dự án</a>
+                                    <ul class="dropdown-menu-header">
+                                        <li><a href="#" target="_self" title="Dự án">Dự án 1</a></li>
+                                        <li><a href="#" target="_self" title="Dự án">Dự án 2</a></li>
+                                        <li><a href="#" target="_self" title="Dự án">Dự án 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="d-block d-lg-none">
+                                    <a href="#" target="_self" title="Tin tức">Tin tức</a>
+                                </li>
+                                <li class="d-block d-lg-none">
+                                    <a href="#" target="_self" title="Tuyển dụng">Tuyển dụng</a>
+                                </li>
+                                <li class="d-flex d-lg-none justify-content-between">
+                                    <a href="#" target="_self" title="Đăng tin nhà đất">Đăng tin nhà đất</a>
+                                    <img src="./images/sx.svg" data-src="./images/icon-upload.svg" alt="Upload" title="Upload" class="lazyload" />
+                                </li>
+                                <li class="d-block d-lg-none">
+                                    <a href="tel:18006269" target="_self" title="Hotline: 1800 6269">Hotline: <strong>1800 6269</strong></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-right flex-center">
+                    <a href="tel:18006296" class="text-main text-18 mr-10 d-none d-lg-block text-highlight" target="_blank" title="1800 6296">
+                        <img src="./images/sx.svg" data-src="./images/icon-phone-blue.svg" alt="1800 6296" title="1800 6296" class="lazyload" /><strong>1800 6296</strong>
+                    </a>
+                    <a href="tel:18006296" target="_blank" class="d-inline-block d-lg-none mr-20" title="1800 6296">
+                        <img src="./images/sx.svg" data-src="./images/icon-phone-black.svg" alt="1800 6296" title="1800 6296" class="lazyload" />
+                    </a>
+                    <ul class="header-nav list-unstyled d-none d-lg-inline-block mb-0">
+                        <li class="d-inline-block"><a href="" target="_self" title="Tin tức" class="p-10 text-link">Tin tức</a></li>
+                        <li class="d-inline-block"><a href="" target="_self" title="Tuyển dụng" class="p-10 text-link">Tuyển dụng</a></li>
+                    </ul>
+                    <span class="d-none d-lg-inline-block">|</span>
+                    <a href="#" target="_self" title="Đăng nhập" class="p-10 d-none d-lg-inline-block text-link">Đăng nhập</a>
+                    <a href="" target="_self" title="Đăng tin nhà đất" class="btn btn-primary btn-smaller d-none d-lg-inline-block">Đăng tin nhà đất</a>
+                    <a href="javascript:void(0)" title="Menu" target="_self" id="icon-bar" class="icon-bar d-inline-block d-lg-none"></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div>
+                
+                <div class="position-relative">
+                    <nav class="bg-tranparent w-100 custom-breadcumb-xs  text-main position-absolute d-none d-lg-block">
+                        <div class="container">
+                            <ol class="breadcrumb breadcrumb-icon d-flex mb-0">
+                                <li class="breadcrumb-item text-14 text-white">
+                                    <a href="#Home" target="_self" title="Home">Trang Chủ</a>
+                                </li>
+                                <li class="breadcrumb-item text-14 text-white">
+                                    <a href="#" target="_self" title="Deals">liên hệ</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </nav>
+                    <div id="carouselExampleControls" class="carousel slide d-flex align-items-center" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active  my-xs-10">
+                              <div class="position-relative text-center">
+                                <img src="./images/sx.svg" data-src="./images/background-contact.jpg" alt="connector" title="connector" class="lazyload  w-100" />
+        
+                                
+                                <div class="ab-center">
+                                    <h1 class="mb-0 text-36 text-medium  text-white  text-xs-18 mb-0">Tin dự án & Thị trường</h1>
+                                    <p class="text-22 text-normal text-white text-xs-14 mb-0 w-xs-300">Thông tin nhanh chóng, chuyên nghiệp</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item  my-xs-10">
+                                <div class="position-relative text-center">
+                                <img src="./images/sx.svg" data-src="./images/background-contact.jpg" alt="connector" title="connector" class="lazyload  w-100" />
+        
+                                
+                                <div class="ab-center">
+                                    <h1 class="mb-0 text-36 text-medium  text-white  text-xs-18 mb-0">Tin dự án & Thị trường</h1>
+                                    <p class="text-22 text-normal text-white text-xs-14 mb-0 w-xs-300">Thông tin nhanh chóng, chuyên nghiệp</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item  my-xs-10">
+                                <div class="position-relative text-center">
+                                  <img src="./images/sx.svg" data-src="./images/background-contact.jpg" alt="connector" title="connector" class="lazyload  w-100" />
+          
+                                  
+                                  <div class="ab-center">
+                                      <h1 class="mb-0 text-36 text-medium  text-white  text-xs-18 mb-0">Tin dự án & Thị trường</h1>
+                                      <p class="text-22 text-normal text-white text-xs-14 mb-0 w-xs-300">Thông tin nhanh chóng, chuyên nghiệp</p>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+              
+              <div class="pagination  bg-white">
+                  <div class="container">
+                    <div class="row  pt-60 pt-xs-40">
+                        <div class="col-lg-9">
+                            <div>
+                                <h2 class="text-blue-medium text-medium mb-30 text-32">Thông tin thị trường</h2>
+                                <div class="row mb-30">
+                                    <div class="col-md-12 col-lg-4"><img src="./images/sx.svg" data-src="./images/banner-news.png" alt="connector" title="connector" height="200px" class="lazyload  w-100" /></div>
+                                    <div class="col-md-12 col-lg-8">
+                                        <h3 class="text-left text-24 mb-15 mt-xs-10 text-bold">Vinhomes công bố hai tiện ích mới tại dự án Vinhomes Grand Park</h3>
+                                        <div class="text-14 mb-15"><img src="./images/sx.svg" data-src="./images/icon-clock-gray.svg" alt="connector" title="connector" class="lazyload mr-5" />25/2/2021</div>
+                                        <p class="text-base">Ngày 16/10 vừa qua, Vinhomes đã chính thức công bố thêm hai tiện ích đẳng cấp bao gồm: Đại lộ Ánh sáng và Bến thuyền sang trọng thuộc Quần thể The Manhattan Glory thuộc dự án Vinhomes Grand Park. </p>
+                                    </div>
+                                </div>
+                                <div class="row mb-30">
+                                    <div class="col-md-12 col-lg-4"><img src="./images/sx.svg" data-src="./images/banner-news.png" alt="connector" title="connector" height="200px" class="lazyload  w-100" /></div>
+                                    <div class="col-md-12 col-lg-8">
+                                        <h3 class="text-left text-24 mb-15 mt-xs-10 text-bold">Vinhomes công bố hai tiện ích mới tại dự án Vinhomes Grand Park</h3>
+                                        <div class="text-14 mb-15"><img src="./images/sx.svg" data-src="./images/icon-clock-gray.svg" alt="connector" title="connector" class="lazyload mr-5" />25/2/2021</div>
+                                        <p class="text-base">Ngày 16/10 vừa qua, Vinhomes đã chính thức công bố thêm hai tiện ích đẳng cấp bao gồm: Đại lộ Ánh sáng và Bến thuyền sang trọng thuộc Quần thể The Manhattan Glory thuộc dự án Vinhomes Grand Park. </p>
+                                    </div>
+                                </div>
+                                <div class="row mb-30">
+                                    <div class="col-md-12 col-lg-4"><img src="./images/sx.svg" data-src="./images/banner-news.png" alt="connector" title="connector" height="200px" class="lazyload  w-100" /></div>
+                                    <div class="col-md-12 col-lg-8">
+                                        <h3 class="text-left text-24 mb-15 mt-xs-10 text-bold">Vinhomes công bố hai tiện ích mới tại dự án Vinhomes Grand Park</h3>
+                                        <div class="text-14 mb-15"><img src="./images/sx.svg" data-src="./images/icon-clock-gray.svg" alt="connector" title="connector" class="lazyload mr-5" />25/2/2021</div>
+                                        <p class="text-base">Ngày 16/10 vừa qua, Vinhomes đã chính thức công bố thêm hai tiện ích đẳng cấp bao gồm: Đại lộ Ánh sáng và Bến thuyền sang trọng thuộc Quần thể The Manhattan Glory thuộc dự án Vinhomes Grand Park. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <nav aria-label="...">
+                                <ul class="pagination justify-content-center">
+                                  <li class="page-item disabled">
+                                    <span class="py-5px px-10 page-link bg-tranparent border-none "><img src="./images/sx.svg" data-src="./images/icon-arrow-left-blue.svg" alt="connector" title="connector" class="lazyload  w-100" /></span>
+                                  </li>
+                                  <li class="page-item "><a class="py-5px px-10 bg-tranparent page-link border-none text-secondary-gray-5" href="#">1</a></li>
+                                  <li class="page-item active" aria-current="page">
+                                    <span class="text-secondary-gray-5 py-5px px-10 page-link border-none">2</span>
+                                  </li>
+                                  <li class="page-item"><a class="py-5px px-10 bg-tranparent page-link border-none text-secondary-gray-5 " href="#">3</a></li>
+                                  <li class="page-item">
+                                    <a class="py-5px px-10 page-link bg-tranparent border-none" href="#"><img src="./images/sx.svg" data-src="./images/icon-arrow-right-blue.svg" alt="connector" title="connector" class="lazyload  w-100" /></a>
+                                  </li>
+                                </ul>
+                              </nav>
+                           
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="row d-none d-lg-block">
+                                <div class="col-lg-12 rounded bg-light-brown text-center">
+                                    <img src="./images/sx.svg" data-src="./images/icon-letter-stick.svg" alt="connector" width="80px" height="68px" title="connector" class="lazyload  w-100 mb-20 mt-30" />
+                                    <h4 class="text-base text-18 mb-20 text-bold">Đừng bỏ lỡ thông tin!</h4>
+                                    <p class="text-gray-2 mb-20">Nhận những thông tin mới nhất của thị trường bất động sản gửi qua email hàng tuần.</p>
+                                    <div>
+                                        <form action="" class="form-group">
+                                            <input type="text" class="text-gray-7  mb-10 h-40 mw-227 w-auto form-control  border ml-20" placeholder="Nhập email đăng ký">
+                                            <button class="mw-227 btn m-0 mt-lg-0 h-44  text-18 text-normal text-18 mb-30" >
+                                            Đăng Ký
+                                            </button>
+                                        </form>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                  </div>
+               
+              </div>
+           
+        </main>
+         <footer>
+            <div class="container">
+                <div class="top-footer">
+                    <div class="row">
+                        <div class="col-6 col-lg-3 my-xs-10">
+                            <div class="media">
+                                <img data-src="./images/icon-phone-black.svg" src="./images/sx.svg" alt="Hotline miễn phí" title="Hotline miễn phí" class="lazyload mr-5 mr-lg-10" />
+                                <div class="media-content">
+                                    <p class="mb-0">Hotline miễn phí</p>
+                                    <a href="tel:18006296" class="text-main" target="_blank" title="1800 6296"><strong>1800 6296</strong></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 my-xs-10">
+                            <div class="media">
+                                <img data-src="./images/icon-phone-black.svg" src="./images/sx.svg" alt="Khiếu nại, phản hồi" title="Khiếu nại, phản hồi" class="lazyload mr-5 mr-lg-10" />
+                                <div class="media-content">
+                                    <p class="mb-0">Khiếu nại, phản hồi</p>
+                                    <a href="tel:0862030402" class="text-main" target="_blank" title="0862 03 04 02"><strong>0862 03 04 02</strong></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 my-xs-10">
+                            <div class="media">
+                                <img data-src="./images/icon-mail-black.svg" src="./images/sx.svg" alt="Bộ phận kinh doanh" title="Bộ phận kinh doanh" class="lazyload mr-5 mr-lg-10 mt-5" />
+                                <div class="media-content">
+                                    <p class="mb-0">Bộ phận kinh doanh</p>
+                                    <a href="mailto:namsaigon@khaihung.vn" class="text-main" target="_blank" title="namsaigon@khaihung.vn"><strong>namsaigon@khaihung.vn</strong></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 my-xs-10">
+                            <div class="media">
+                                <img data-src="./images/icon-mail-black.svg" src="./images/sx.svg" alt="Chăm sóc khách hàng" title="Chăm sóc khách hàng" class="lazyload mr-5 mr-lg-10 mt-5" />
+                                <div class="media-content">
+                                    <p class="mb-0">Chăm sóc khách hàng</p>
+                                    <a href="mailto:support@khaihung.vn" class="text-main" target="_blank" title="support@khaihung.vn"><strong>support@khaihung.vn</strong></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-footer">
+                    <div class="row">
+                        <div class="col-lg-4 order-xs-2 text-xs-center">
+                            <p>Website <a href="www.nhariengle.com" target="_self" title="www.nhariengle.com" class="text-link">www.nhariengle.com</a> được điều hành bởi <strong>KHAIHUNG LAND™</strong></p>
+                            <a href="#" target="_self" title="Logo" class="d-inline-block mb-15">
+                                <img data-src="./images/logo.svg" src="./images/sx.svg" alt="Logo" title="Logo" class="lazyload" />
+                            </a>
+                            <div class="media">
+                                <img data-src="./images/icon-map.svg" src="./images/sx.svg" alt="Hotline miễn phí" title="Hotline miễn phí" class="lazyload mr-10 mt-5" />
+                                <div class="media-content">
+                                    <p>153 Trần Trọng Cung, Phường Tân Thuận Đông, Quận 7, TP. Hồ Chí Minh</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <h3 class="footer-title has-dropdown">VỀ CHÚNG TÔI</h3>
+                                    <ul class="footer-nav">
+                                        <li><a href="#" target="_self" title="Giới thiệu">Giới thiệu</a></li>
+                                        <li><a href="#" target="_self" title="Đăng tin">Đăng tin</a></li>
+                                        <li><a href="#" target="_self" title="Tuyển dụng">Tuyển dụng</a></li>
+                                        <li><a href="#" target="_self" title="Liên hệ">Liên hệ</a></li>
+                                        <li><a href="#" target="_self" title="Tin tức">Tin tức</a></li>
+                                    </ul>
+                                    <hr class="hr-basic m-0 mb-15 d-lg-none">
+                                </div>
+                                <div class="col-lg-3">
+                                    <h3 class="footer-title has-dropdown">DỊCH VỤ</h3>
+                                    <ul class="footer-nav">
+                                        <li><a href="#" target="_self" title="Mua nhà">Mua nhà</a></li>
+                                        <li><a href="#" target="_self" title="Thuê nhà">Thuê nhà</a></li>
+                                        <li><a href="#" target="_self" title="Dự án">Dự án</a></li>
+                                    </ul>
+                                    <hr class="hr-basic m-0 mb-15 d-lg-none">
+                                </div>
+                                <div class="col-lg-6">
+                                    <h3 class="footer-title">KẾT NỐI VỚI CHÚNG TÔI</h3>
+                                    <ul class="social-box">
+                                        <li class="mr-20">
+                                            <a href="#" target="_blank" title="Facebook">
+                                                <img data-src="./images/icon-fb-gray.svg" src="./images/sx.svg" alt="Facebook" title="Facebook" class="lazyload fb-gray" />
+                                                <img data-src="./images/icon-fb-color.svg" src="./images/sx.svg" alt="Facebook" title="Facebook" class="lazyload fb-color d-none" />
+                                            </a>
+                                        </li>
+                                        <li class="mr-20">
+                                            <a href="#" target="_blank" title="Instagram">
+                                                <img data-src="./images/icon-instagram-gray.svg" src="./images/sx.svg" alt="Instagram" title="Instagram" class="lazyload instagram-gray" />
+                                                <img data-src="./images/icon-instagram-color.svg" src="./images/sx.svg" alt="Instagram" title="Instagram" class="lazyload instagram-color d-none" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="Youtube">
+                                                <img data-src="./images/icon-youtube-gray.svg" src="./images/sx.svg" alt="Youtube" title="Youtube" class="lazyload youtube-gray" />
+                                                <img data-src="./images/icon-youtube-color.svg" src="./images/sx.svg" alt="Youtube" title="Youtube" class="lazyload youtube-color d-none" />
+
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <p class="mt-30 mb-25"><strong>Đăng ký để nhận thông tin mới nhất</strong></p>
+                                    <form action="" class="subscribe-form">
+                                        <div class="form-group form-large flex-grow-1">
+                                            <input type="email" placeholder="Nhập email của bạn" class="form-control" />
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary max-w-100">
+                                                <img src="./images/icon-arrow-right-white.svg" alt="Gửi" title="Gửi" class="d-lg-none"><span class="hidden-xs">Gửi</span></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>© 2020 Khai Hung Land. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap-4.5.min.js"></script>
+        <script src="js/select2/select2.min.js"></script>
+        <script src="js/lazysizes.min.js"></script>
+        <script src="js/ls.bgset.min.js"></script>
+        <script src="js/paging.js"></script>
+        <script src="js/style.js?v=1"></script>
+        <script type="text/javascript">
+            $(function () {
+                $('#full-name').focus(function(){
+                $(this).blur(function(){
+                    if($(this).val().length != 0){
+                        $('.info-full-name .title-input-contact').addClass("active");
+                    }else{
+                        $('.info-full-name .title-input-contact').removeClass("active");
+                    }
+                     })
+                })
+                $('#phone').focus(function(){
+                $(this).blur(function(){
+                    if($(this).val().length != 0){
+                        $('.info-phone .title-input-contact').addClass("active");
+                    }else{
+                        $('.info-phone .title-input-contact').removeClass("active");
+                    }
+                     })
+                })
+            });
+        </script>
+    </body>
+</html>

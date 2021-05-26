@@ -1,0 +1,21 @@
+-------------------- Auto-Git Log --------------------
+		Thu May 13 2021 14:51:38 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* css/app.css
+* css/app.css.map
+* homepage.html
+* scss/_class.scss
+
+
+Created files:
+* .autogit/logs/log-13-4-2021-14-21-18.txt
+* images/icon-clock-gray.svg
+* images/img-house-small.png
+
+
+Deleted files:
+
+
+Renamed files:

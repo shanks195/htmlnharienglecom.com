@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Thu May 20 2021 10:20:00 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* homepage.html
+
+
+Created files:
+* images/info-bds/img-1.png
+
+
+Deleted files:
+
+
+Renamed files:

@@ -1,0 +1,22 @@
+-------------------- Auto-Git Log --------------------
+		Thu May 13 2021 13:20:35 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* components.html
+* css/app.css
+* css/app.css.map
+* homepage.html
+* scss/_class.scss
+* scss/utilities/_text.scss
+
+
+Created files:
+* .autogit/logs/log-13-4-2021-12-50-15.txt
+* images/icon-cricle-thunder.svg
+
+
+Deleted files:
+
+
+Renamed files:

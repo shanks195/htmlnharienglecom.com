@@ -1,0 +1,111 @@
+header {
+	background-color: $white;
+	padding: 15px 0;
+	box-shadow: $shadow;
+	position: sticky;
+	z-index: 999;
+	top: 0;
+	@include media-breakpoint-down(md) {
+		padding: 7px 0;
+	}
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+.header-left {
+	display: flex;
+}
+.menu-header {
+	list-style-type: none;
+	margin: 0;
+	& > li {
+		display: inline-block;
+		padding: 15px 15px 5px 15px;
+		@include media-breakpoint-down(md) {
+			display: block;
+			padding: 15px 0;
+			border-bottom: 1px solid #E0E0E0;
+		}
+		&.has-dropdown {
+			position: relative;
+			background-image: url('../images/icon-caret-down-blue.svg');
+			background-repeat: no-repeat;
+			background-position: top 22px right 0;
+			.dropdown-menu-header {
+				list-style-type: none;
+				position: absolute;
+				display: none;
+				top: 100%;
+				width: 240px;
+				background-color: $white;
+					box-shadow: $shadow;
+					& > li {
+						display: block;
+						a {
+							display: block;
+							padding: 10px 15px;
+							transition: $transition;
+							@include media-breakpoint-up(lg) {
+								&:hover {
+									background-color: $primary-color;
+									color: $white;
+								}
+							}
+						}
+					}
+					@include media-breakpoint-down(md) {
+						position: unset;
+						box-shadow: none;
+					}
+					& > a {
+						transition: $transition;
+					}
+			}
+			&:hover {
+				.dropdown-menu-header {
+					display: block;
+				}
+				& > a {
+					color: $primary-color;
+				}
+			}
+		}
+	}
+}
+.menu-header-mobile {
+	@include media-breakpoint-down(md) {
+		position: fixed;
+		left: 100%;
+		top: 0;
+		height: 100vh;
+		width: 100vw;
+		transition: $transition;
+		z-index: 1000;
+		&.active {
+			left: 0;
+		}
+		.overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: calc(100vw - 320px);
+			height: 100%;
+			background-color: rgba(0,0,0,0.6);
+		}
+		.menu-header-wrapper {
+			background-color: $white;
+			position: absolute;
+			top: 0;
+			left: calc(100vw - 320px);
+			width: 320px;
+			height: 100%;
+		}
+	}
+}
+.icon-bar {
+	width: 18px;
+	height: 12px;
+	background-image: url('../images/icon-bar.svg');
+}

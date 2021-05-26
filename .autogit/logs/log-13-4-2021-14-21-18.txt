@@ -1,0 +1,21 @@
+-------------------- Auto-Git Log --------------------
+		Thu May 13 2021 14:21:18 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* css/app.css
+* css/app.css.map
+* homepage.html
+* scss/_class.scss
+* scss/utilities/_spacing.scss
+
+
+Created files:
+* .autogit/logs/log-13-4-2021-13-50-57.txt
+* images/img-house.png
+
+
+Deleted files:
+
+
+Renamed files:

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
     <title>Home page</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/app.css?v=2" />
+
 </head>
 
 <body>
@@ -103,242 +104,602 @@
         </div>
     </header>
     <main>
+        <!-- ANCHOR banner-buy -->
+        <div class="bg padding-block" style="background-image: url(./images/banner-buy/banner.png);">
+            <div class="container">
+                <div class="box-info-bds">
+                    <div class="container">
+                        <div class="top">
+                            <div class="form-check check-text">
+                                <input class="form-check-input d-none" type="radio" name="exampleRadios" id="buy" value="option1" checked>
+                                <label class="form-check-label" for="buy">
+                                Mua
+                            </label>
+                            </div>
+                            <div class="form-check check-text">
+                                <input class="form-check-input d-none" type="radio" name="exampleRadios" id="rent" value="option2">
+                                <label class="form-check-label" for="rent">
+                              Thuê
+                            </label>
+                            </div>
+                            <div class="form-check check-text">
+                                <input class="form-check-input d-none" type="radio" name="exampleRadios" id="Project" value="option2">
+                                <label class="form-check-label" for="Project">
+                             Dự án
+                            </label>
+                            </div>
+                        </div>
+                        <div class="bottom pb-30">
+
+                            <p class="text-right text-14 text-primary mt-15">
+                                <a class="advanced-search" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                   Tìm kiếm nâng cao
+                                  </a>
+                            </p>
+
+                            <div class="d-flex justify-content-between">
+
+                                <div class="box-address position-relative" style="width: 70%;">
+                                    <div class="border-position" style="  "></div>
+                                    <select class="custom-select custom-real-estate click-down-bg-form">
+                                        <option selected>Chọn loại BĐS</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                    <input type="text" placeholder="Nhập địa chỉ tìm kiếm" class="input-address">
+                                </div>
+                                <button class="btn btn-primary btn-lg" style="width: 20%;">
+                                    Tìm kiếm
+                                </button>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+
+
+                                <div class="box-select mt-20">
+                                    <select class="custom-select click-down-bg-form">
+                                    <option selected>Tp.HCM</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                                    <select class="custom-select click-down-bg-form">
+                                    <option selected>Quận/ Huyện</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                                    <select class="custom-select click-down-bg-form">
+                                    <option selected>Phường xã</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                                    <select class="custom-select click-transparent-bg-form">
+                                    <option selected>Mức giá </option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                    <option value="3">Three</option>
+                                    <option value="3">Three</option>
+                                    <option value="3">Three</option>
+                                    <option value="3">Three</option>
+                                    <option value="3">Three</option>
+                                    <option value="3">Three</option>
+                                    <option value="3">Three</option>
+                                    <option value="3">Three</option>
+                                    <option value="3">Three</option>
+                                    <option value="3">Three</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                                </div>
+                                <div class="box-select mt-30">
+                                    <select class="custom-select click-down-bg-form">
+                                        <option selected>Diện tích</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                    <select class="custom-select click-down-bg-form">
+                                        <option selected>Hướng</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                </div>
+                                <div class="form-group  d-flex box-search mt-60 " style="width:272px">
+                                    <input type="text" class="form-control input-search" id="inputCity" placeholder="Lưu bộ tìm kiếm">
+                                    <button class="btn btn-primary btn-save">Lưu</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- ANCHOR banner -->
         <div class="py-60 py-xs-20">
             <div class="container">
                 <h2 class="block-title text-xs-20 mb-30 mb-xs-20">Ưa đãi đặc biệt</h2>
+
+            </div>
+            <div class="container p-xs-0">
+                <!-- <div class="row">
+                    <div class="col-12 pr-xs-0"> -->
+                <div id="slider-banner" class="carousel slide d-lg-block d-none" data-ride="carousel">
+                    <ol class="carousel-indicators carousel-banner-ol">
+                        <li data-target="#slider-banner" data-slide-to="0" class="active"></li>
+                        <li data-target="#slider-banner" data-slide-to="1"></li>
+                        <li data-target="#slider-banner" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/banner-slick.png" class="d-block w-100" alt="banner-slick" title="banner-slick">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="./images/banner-slick.png" class="d-block w-100" alt="banner-slick" title="banner-slick">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="./images/banner-slick.png" class="d-block w-100" alt="banner-slick" title="banner-slick">
+                        </div>
+                    </div>
+                    <a class="carousel-control-next control-banner-prev" href="#slider-banner" role="button" data-slide="next">
+                        <img src="images/banner/arrow-left-banner.svg" alt="arrow-left-banner" title="arrow-left-banner" class="" aria-hidden="true">
+                    </a>
+                    <a class="carousel-control-next control-banner-next" href="#slider-banner" role="button" data-slide="next">
+                        <img src="images/banner/arrow-right-banner.svg" alt="arrow-right-banner" title="arrow-right-banner" class="" aria-hidden="true">
+                    </a>
+                </div>
+
+                <!-- </div>
+                </div> -->
+            </div>
+            <div class="container">
                 <div class="row">
+                    <div class="col-12 grid-box hide-scrollbar d-lg-none d-flex">
+                        <a href="#" target="_self" title="" class="d-block mw-xs-300">
+                            <img src="images/banner/banner-img-mobile.png" alt="" class="w-100">
+                        </a>
+                        <a href="#" target="_self" title="" class="d-block   mw-xs-300">
+                            <img src="images/banner/banner-img-mobile.png" alt="" class="w-100">
+                        </a>
+                        <a href="#" target="_self" title="" class="d-block   mw-xs-300">
+                            <img src="images/banner/banner-img-mobile.png" alt="" class="w-100">
+                        </a>
+                        <a href="#" target="_self" title="" class="d-block   mw-xs-300">
+                            <img src="images/banner/banner-img-mobile.png" alt="" class="w-100">
+                        </a>
+                        <a href="#" target="_self" title="" class="d-block   mw-xs-300">
+                            <img src="images/banner/banner-img-mobile.png" alt="" class="w-100">
+                        </a>
 
-                    <div class="col-12 pr-xs-0">
-
-                        <div id="slider-banner" class="carousel slide d-lg-block d-none" data-ride="carousel">
-                            <ol class="carousel-indicators carousel-banner-ol">
-                                <li data-target="#slider-banner" data-slide-to="0" class="active"></li>
-                                <li data-target="#slider-banner" data-slide-to="1"></li>
-                                <li data-target="#slider-banner" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="./images/banner-slick.png" class="d-block w-100" alt="banner-slick" title="banner-slick">
-                                </div>
-                                <div class="carousel-item ">
-                                    <img src="./images/banner-slick.png" class="d-block w-100" alt="banner-slick" title="banner-slick">
-                                </div>
-                                <div class="carousel-item ">
-                                    <img src="./images/banner-slick.png" class="d-block w-100" alt="banner-slick" title="banner-slick">
-                                </div>
-                            </div>
-                            <a class="carousel-control-next control-banner-prev" href="#slider-banner" role="button" data-slide="next">
-
-                                <img src="images/banner/arrow-left-banner.svg" alt="arrow-left-banner" title="arrow-left-banner" class="" aria-hidden="true">
-                            </a>
-                            <a class="carousel-control-next control-banner-next" href="#slider-banner" role="button" data-slide="next">
-
-                                <img src="images/banner/arrow-right-banner.svg" alt="arrow-right-banner" title="arrow-right-banner" class="" aria-hidden="true">
-                            </a>
-                        </div>
-                        <div class="slider-banner box-click  d-block d-lg-none">
-                            <div class="item">
-                                <img src="./images/sx.svg" data-src="./images/banner/banner-img-mobile.png" alt="banner-slick" title="banner-img-mobile" class="lazyload d-block w-100">
-                            </div>
-                            <div class="item">
-                                <img src="./images/sx.svg" data-src="./images/banner/banner-img-mobile.png" alt="banner-slick" title="banner-img-mobile" class="lazyload d-block w-100">
-                            </div>
-
-                            <div class="item">
-                                <img src="./images/sx.svg" data-src="./images/banner/banner-img-mobile.png" alt="banner-slick" title="banner-img-mobile" class="lazyload d-block w-100">
-                            </div>
-
-
-                            <div class="item">
-                                <img src="./images/sx.svg" data-src="./images/banner/banner-img-mobile.png" alt="banner-slick" title="banner-img-mobile" class="lazyload d-block w-100">
-                            </div>
-
-                            <div class="item">
-                                <img src="./images/sx.svg" data-src="./images/banner/banner-img-mobile.png" alt="banner-slick" title="banner-img-mobile" class="lazyload d-block w-100">
-                            </div>
-
-
-
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- //ANCHOR Featured real estate -->
+        <!-- //ANCHOR bất động sản nổi bật -->
+        <div class="box-real">
 
-        <div class="py-60 py-xs-20">
+            <div class="container">
+                <h2 class="block-title text-xs-20 mb-0">Bất động sản nổi bật</h2>
+                <div class="row  pt-30 pt-xs-20">
+                    <div class="col-12 grid-box hide-scrollbar ">
+                        <a href="#" target="_self" title="" class="d-block rounded bds-box mb-xs-30">
+                            <div class="image-wrap">
+                                <img src="images/icon-heart.svg" alt="icon-heart" title="icon-heart" class="icon-heart">
+                                <img src="images/info-bds/img-1.png" alt="" title="" class=" d-block w-100" />
+                                <span class="image-num">10 hình</span>
+                            </div>
+                            <div class="p-15">
+                                <span class="">
+                           <strong class="text-accent text-18 text-lg-24 mr-5">1000 tỷ</strong>
+                           <sup class="text-accent text-16">| 5 x 16m</sup>
+                           </span>
+                                <span class="float-right mt-5 text-gray text-14 text-xs-12">100 triệu/m²</span>
+                                <p class="text-bds-highlights ">Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình. Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà
+                                    thực tế đẹp hơn trong hình.Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình.</p>
+                                <p class="text-gray-light text-14 text-xs-12">A02182021 • Xã Phú Xuân, Huyện Nhà Bè</p>
+                                <p class="text-14 text-gray-light d-flex">
+                                    <img src="./images/icon-compass.svg" alt="" title="" class="mr-5" />Tây Tứ Trạch <img src="./images/icon-bathtub.svg" alt="" title="" class="ml-15 mr-5" />5
+                                    <img src="./images/icon-bedroom.svg" alt="" title="" class="ml-15 mr-5" />4
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" target="_self" title="" class="d-block rounded bds-box mb-xs-30">
+                            <div class="image-wrap">
+                                <img src="images/icon-heart.svg" alt="icon-heart" title="icon-heart" class="icon-heart">
+                                <img src="images/info-bds/img-1.png" alt="" title="" class=" d-block w-100" />
+                                <span class="image-num">10 hình</span>
+                            </div>
+                            <div class="p-15">
+                                <span class="">
+                           <strong class="text-accent text-18 text-lg-24 mr-5">1000 tỷ</strong>
+                           <sup class="text-accent text-16">| 5 x 16m</sup>
+                           </span>
+                                <span class="float-right mt-5 text-gray text-14 text-xs-12">100 triệu/m²</span>
+                                <p class="text-bds-highlights ">Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình. Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà
+                                    thực tế đẹp hơn trong hình.Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình.</p>
+                                <p class="text-gray-light text-14 text-xs-12">A02182021 • Xã Phú Xuân, Huyện Nhà Bè</p>
+                                <p class="text-14 text-gray-light d-flex">
+                                    <img src="./images/icon-compass.svg" alt="" title="" class="mr-5" />Tây Tứ Trạch <img src="./images/icon-bathtub.svg" alt="" title="" class="ml-15 mr-5" />5
+                                    <img src="./images/icon-bedroom.svg" alt="" title="" class="ml-15 mr-5" />4
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" target="_self" title="" class="d-none d-md-block rounded bds-box mb-xs-30">
+                            <div class="image-wrap">
+                                <img src="images/icon-heart.svg" alt="icon-heart" title="icon-heart" class="icon-heart">
+                                <img src="images/info-bds/img-1.png" alt="" title="" class=" d-block w-100" />
+                                <span class="image-num">10 hình</span>
+                            </div>
+                            <div class="p-15">
+                                <span class="">
+                           <strong class="text-accent text-18 text-lg-24 mr-5">1000 tỷ</strong>
+                           <sup class="text-accent text-16">| 5 x 16m</sup>
+                           </span>
+                                <span class="float-right mt-5 text-gray text-14 text-xs-12">100 triệu/m²</span>
+                                <p class="text-bds-highlights ">Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình. Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà
+                                    thực tế đẹp hơn trong hình.Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình.</p>
+                                <p class="text-gray-light text-14 text-xs-12">A02182021 • Xã Phú Xuân, Huyện Nhà Bè</p>
+                                <p class="text-14 text-gray-light d-flex">
+                                    <img src="./images/icon-compass.svg" alt="" title="" class="mr-5" />Tây Tứ Trạch <img src="./images/icon-bathtub.svg" alt="" title="" class="ml-15 mr-5" />5
+                                    <img src="./images/icon-bedroom.svg" alt="" title="" class="ml-15 mr-5" />4
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" target="_self" title="" class="d-none d-md-block rounded bds-box mb-xs-30">
+                            <div class="image-wrap">
+                                <img src="images/icon-heart.svg" alt="icon-heart" title="icon-heart" class="icon-heart">
+                                <img src="images/info-bds/img-1.png" alt="" title="" class=" d-block w-100" />
+                                <span class="image-num">10 hình</span>
+                            </div>
+                            <div class="p-15">
+                                <span class="">
+                           <strong class="text-accent text-18 text-lg-24 mr-5">1000 tỷ</strong>
+                           <sup class="text-accent text-16">| 5 x 16m</sup>
+                           </span>
+                                <span class="float-right mt-5 text-gray text-14 text-xs-12">100 triệu/m²</span>
+                                <p class="text-bds-highlights ">Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình. Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà
+                                    thực tế đẹp hơn trong hình.Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình.</p>
+                                <p class="text-gray-light text-14 text-xs-12">A02182021 • Xã Phú Xuân, Huyện Nhà Bè</p>
+                                <p class="text-14 text-gray-light d-flex">
+                                    <img src="./images/icon-compass.svg" alt="" title="" class="mr-5" />Tây Tứ Trạch <img src="./images/icon-bathtub.svg" alt="" title="" class="ml-15 mr-5" />5
+                                    <img src="./images/icon-bedroom.svg" alt="" title="" class="ml-15 mr-5" />4
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" target="_self" title="" class="d-block rounded bds-box mb-xs-30">
+                            <div class="image-wrap">
+                                <img src="images/icon-heart.svg" alt="icon-heart" title="icon-heart" class="icon-heart">
+                                <img src="images/info-bds/img-1.png" alt="" title="" class=" d-block w-100" />
+                                <span class="image-num">10 hình</span>
+                            </div>
+                            <div class="p-15">
+                                <span class="">
+                           <strong class="text-accent text-18 text-lg-24 mr-5">1000 tỷ</strong>
+                           <sup class="text-accent text-16">| 5 x 16m</sup>
+                           </span>
+                                <span class="float-right mt-5 text-gray text-14 text-xs-12">100 triệu/m²</span>
+                                <p class="text-bds-highlights ">Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình. Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà
+                                    thực tế đẹp hơn trong hình.Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình.</p>
+                                <p class="text-gray-light text-14 text-xs-12">A02182021 • Xã Phú Xuân, Huyện Nhà Bè</p>
+                                <p class="text-14 text-gray-light d-flex">
+                                    <img src="./images/icon-compass.svg" alt="" title="" class="mr-5" />Tây Tứ Trạch <img src="./images/icon-bathtub.svg" alt="" title="" class="ml-15 mr-5" />5
+                                    <img src="./images/icon-bedroom.svg" alt="" title="" class="ml-15 mr-5" />4
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" target="_self" title="" class="d-block rounded bds-box mb-xs-30">
+                            <div class="image-wrap">
+                                <img src="images/icon-heart.svg" alt="icon-heart" title="icon-heart" class="icon-heart">
+                                <img src="images/info-bds/img-1.png" alt="" title="" class=" d-block w-100" />
+                                <span class="image-num">10 hình</span>
+                            </div>
+                            <div class="p-15">
+                                <span class="">
+                           <strong class="text-accent text-18 text-lg-24 mr-5">1000 tỷ</strong>
+                           <sup class="text-accent text-16">| 5 x 16m</sup>
+                           </span>
+                                <span class="float-right mt-5 text-gray text-14 text-xs-12">100 triệu/m²</span>
+                                <p class="text-bds-highlights ">Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình. Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà
+                                    thực tế đẹp hơn trong hình.Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình.</p>
+                                <p class="text-gray-light text-14 text-xs-12">A02182021 • Xã Phú Xuân, Huyện Nhà Bè</p>
+                                <p class="text-14 text-gray-light d-flex">
+                                    <img src="./images/icon-compass.svg" alt="" title="" class="mr-5" />Tây Tứ Trạch <img src="./images/icon-bathtub.svg" alt="" title="" class="ml-15 mr-5" />5
+                                    <img src="./images/icon-bedroom.svg" alt="" title="" class="ml-15 mr-5" />4
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="#" target="_self" title="" class="d-block rounded bds-box mb-xs-30">
+                            <div class="image-wrap">
+                                <img src="images/icon-heart.svg" alt="icon-heart" title="icon-heart" class="icon-heart">
+                                <img src="images/info-bds/img-1.png" alt="" title="" class=" d-block w-100" />
+                                <span class="image-num">10 hình</span>
+                            </div>
+                            <div class="p-15">
+                                <span class="">
+                           <strong class="text-accent text-18 text-lg-24 mr-5">1000 tỷ</strong>
+                           <sup class="text-accent text-16">| 5 x 16m</sup>
+                           </span>
+                                <span class="float-right mt-5 text-gray text-14 text-xs-12">100 triệu/m²</span>
+                                <p class="text-bds-highlights ">Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình. Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà
+                                    thực tế đẹp hơn trong hình.Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình.</p>
+                                <p class="text-gray-light text-14 text-xs-12">A02182021 • Xã Phú Xuân, Huyện Nhà Bè</p>
+                                <p class="text-14 text-gray-light d-flex">
+                                    <img src="./images/icon-compass.svg" alt="" title="" class="mr-5" />Tây Tứ Trạch <img src="./images/icon-bathtub.svg" alt="" title="" class="ml-15 mr-5" />5
+                                    <img src="./images/icon-bedroom.svg" alt="" title="" class="ml-15 mr-5" />4
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" target="_self" title="" class="d-block rounded bds-box mb-xs-30">
+                            <div class="image-wrap">
+                                <img src="images/icon-heart.svg" alt="icon-heart" title="icon-heart" class="icon-heart">
+                                <img src="images/info-bds/img-1.png" alt="" title="" class=" d-block w-100" />
+                                <span class="image-num">10 hình</span>
+                            </div>
+                            <div class="p-15">
+                                <span class="">
+                           <strong class="text-accent text-18 text-lg-24 mr-5">1000 tỷ</strong>
+                           <sup class="text-accent text-16">| 5 x 16m</sup>
+                           </span>
+                                <span class="float-right mt-5 text-gray text-14 text-xs-12">100 triệu/m²</span>
+                                <p class="text-bds-highlights ">Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình. Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà
+                                    thực tế đẹp hơn trong hình.Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình.</p>
+                                <p class="text-gray-light text-14 text-xs-12">A02182021 • Xã Phú Xuân, Huyện Nhà Bè</p>
+                                <p class="text-14 text-gray-light d-flex">
+                                    <img src="./images/icon-compass.svg" alt="" title="" class="mr-5" />Tây Tứ Trạch <img src="./images/icon-bathtub.svg" alt="" title="" class="ml-15 mr-5" />5
+                                    <img src="./images/icon-bedroom.svg" alt="" title="" class="ml-15 mr-5" />4
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a href="#" class="d-flex text-more-project font-weight-normal mt-30">Xem thêm nhà đất
+                    <img src="images/icon-blue-right.svg" alt="Xem thêm nhà đất" title="Xem thêm nhà đất" class="ml-10">    
+                </a>
+            </div>
+        </div>
+
+
+        <!-- //ANCHOR Mua bán bất động sản -->
+        <div class="padding-block tabs">
             <div class="container pr-xs-0">
-                <h2 class="block-title text-xs-20">Bất động sản nổi bật</h2>
-                <div class="grid-box">
-                    <div class="bds-box  position-relative ">
-                        <a href="#" target="_self" title="" class=" rounded bds-box-wrapper">
-                            <div class="image-wrap">
-                                <img src="images/icon-heart.svg" alt="icon-heart" title="icon-heart" class="icon-heart">
-                                <img src="images/info-bds/img-1.png" alt="" title="" class=" d-block w-100" />
-                                <span class="image-num">10 hình</span>
-                            </div>
-                            <div class="p-15">
-                                <span class="">
-                                    <strong class="text-accent text-18 text-lg-24 mr-5">1000 tỷ</strong>
-                                    <sup class="text-accent text-16">| 5 x 16m</sup>
-                                </span>
-                                <span class="float-right mt-5 text-gray text-14 text-xs-12">100 triệu/m²</span>
-                                <p class="my-10 text-16 text-xs-14 text-base">Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình.</p>
-                                <p class="text-gray-light text-14 text-xs-12">A02182021 • Xã Phú Xuân, Huyện Nhà Bè</p>
-                                <p class="text-14 text-gray-light d-flex">
-                                    <img src="./images/icon-compass.svg" alt="" title="" class="mr-5" />Tây Tứ Trạch <img src="./images/icon-bathtub.svg" alt="" title="" class="ml-15 mr-5" />5
-                                    <img src="./images/icon-bedroom.svg" alt="" title="" class="ml-15 mr-5" />4
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="bds-box  position-relative ">
-                        <a href="#" target="_self" title="" class=" rounded bds-box-wrapper">
-                            <div class="image-wrap">
-                                <img src="images/icon-heart.svg" alt="icon-heart" title="icon-heart" class="icon-heart">
-                                <img src="images/info-bds/img-1.png" alt="" title="" class=" d-block w-100" />
-                                <span class="image-num">10 hình</span>
-                            </div>
-                            <div class="p-15">
-                                <span class="">
-                                    <strong class="text-accent text-18 text-lg-24 mr-5">1000 tỷ</strong>
-                                    <sup class="text-accent text-16">| 5 x 16m</sup>
-                                </span>
-                                <span class="float-right mt-5 text-gray text-14 text-xs-12">100 triệu/m²</span>
-                                <p class="my-10 text-16 text-xs-14 text-base">Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình.</p>
-                                <p class="text-gray-light text-14 text-xs-12">A02182021 • Xã Phú Xuân, Huyện Nhà Bè</p>
-                                <p class="text-14 text-gray-light d-flex">
-                                    <img src="./images/icon-compass.svg" alt="" title="" class="mr-5" />Tây Tứ Trạch <img src="./images/icon-bathtub.svg" alt="" title="" class="ml-15 mr-5" />5
-                                    <img src="./images/icon-bedroom.svg" alt="" title="" class="ml-15 mr-5" />4
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="bds-box  position-relative ">
-                        <a href="#" target="_self" title="" class=" rounded bds-box-wrapper">
-                            <div class="image-wrap">
-                                <img src="images/icon-heart.svg" alt="icon-heart" title="icon-heart" class="icon-heart">
-                                <img src="images/info-bds/img-1.png" alt="" title="" class=" d-block w-100" />
-                                <span class="image-num">10 hình</span>
-                            </div>
-                            <div class="p-15">
-                                <span class="">
-                                    <strong class="text-accent text-18 text-lg-24 mr-5">1000 tỷ</strong>
-                                    <sup class="text-accent text-16">| 5 x 16m</sup>
-                                </span>
-                                <span class="float-right mt-5 text-gray text-14 text-xs-12">100 triệu/m²</span>
-                                <p class="my-10 text-16 text-xs-14 text-base">Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình.</p>
-                                <p class="text-gray-light text-14 text-xs-12">A02182021 • Xã Phú Xuân, Huyện Nhà Bè</p>
-                                <p class="text-14 text-gray-light d-flex">
-                                    <img src="./images/icon-compass.svg" alt="" title="" class="mr-5" />Tây Tứ Trạch <img src="./images/icon-bathtub.svg" alt="" title="" class="ml-15 mr-5" />5
-                                    <img src="./images/icon-bedroom.svg" alt="" title="" class="ml-15 mr-5" />4
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="bds-box  position-relative ">
-                        <a href="#" target="_self" title="" class=" rounded bds-box-wrapper">
-                            <div class="image-wrap">
-                                <img src="images/icon-heart.svg" alt="icon-heart" title="icon-heart" class="icon-heart">
-                                <img src="images/info-bds/img-1.png" alt="" title="" class=" d-block w-100" />
-                                <span class="image-num">10 hình</span>
-                            </div>
-                            <div class="p-15">
-                                <span class="">
-                                    <strong class="text-accent text-18 text-lg-24 mr-5">1000 tỷ</strong>
-                                    <sup class="text-accent text-16">| 5 x 16m</sup>
-                                </span>
-                                <span class="float-right mt-5 text-gray text-14 text-xs-12">100 triệu/m²</span>
-                                <p class="my-10 text-16 text-xs-14 text-base">Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình.</p>
-                                <p class="text-gray-light text-14 text-xs-12">A02182021 • Xã Phú Xuân, Huyện Nhà Bè</p>
-                                <p class="text-14 text-gray-light d-flex">
-                                    <img src="./images/icon-compass.svg" alt="" title="" class="mr-5" />Tây Tứ Trạch <img src="./images/icon-bathtub.svg" alt="" title="" class="ml-15 mr-5" />5
-                                    <img src="./images/icon-bedroom.svg" alt="" title="" class="ml-15 mr-5" />4
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="bds-box  position-relative ">
-                        <a href="#" target="_self" title="" class=" rounded bds-box-wrapper">
-                            <div class="image-wrap">
-                                <img src="images/icon-heart.svg" alt="icon-heart" title="icon-heart" class="icon-heart">
-                                <img src="images/info-bds/img-1.png" alt="" title="" class=" d-block w-100" />
-                                <span class="image-num">10 hình</span>
-                            </div>
-                            <div class="p-15">
-                                <span class="">
-                                    <strong class="text-accent text-18 text-lg-24 mr-5">1000 tỷ</strong>
-                                    <sup class="text-accent text-16">| 5 x 16m</sup>
-                                </span>
-                                <span class="float-right mt-5 text-gray text-14 text-xs-12">100 triệu/m²</span>
-                                <p class="my-10 text-16 text-xs-14 text-base">Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình.</p>
-                                <p class="text-gray-light text-14 text-xs-12">A02182021 • Xã Phú Xuân, Huyện Nhà Bè</p>
-                                <p class="text-14 text-gray-light d-flex">
-                                    <img src="./images/icon-compass.svg" alt="" title="" class="mr-5" />Tây Tứ Trạch <img src="./images/icon-bathtub.svg" alt="" title="" class="ml-15 mr-5" />5
-                                    <img src="./images/icon-bedroom.svg" alt="" title="" class="ml-15 mr-5" />4
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="bds-box  position-relative ">
-                        <a href="#" target="_self" title="" class=" rounded bds-box-wrapper">
-                            <div class="image-wrap">
-                                <img src="images/icon-heart.svg" alt="icon-heart" title="icon-heart" class="icon-heart">
-                                <img src="images/info-bds/img-1.png" alt="" title="" class=" d-block w-100" />
-                                <span class="image-num">10 hình</span>
-                            </div>
-                            <div class="p-15">
-                                <span class="">
-                                    <strong class="text-accent text-18 text-lg-24 mr-5">1000 tỷ</strong>
-                                    <sup class="text-accent text-16">| 5 x 16m</sup>
-                                </span>
-                                <span class="float-right mt-5 text-gray text-14 text-xs-12">100 triệu/m²</span>
-                                <p class="my-10 text-16 text-xs-14 text-base">Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình.</p>
-                                <p class="text-gray-light text-14 text-xs-12">A02182021 • Xã Phú Xuân, Huyện Nhà Bè</p>
-                                <p class="text-14 text-gray-light d-flex">
-                                    <img src="./images/icon-compass.svg" alt="" title="" class="mr-5" />Tây Tứ Trạch <img src="./images/icon-bathtub.svg" alt="" title="" class="ml-15 mr-5" />5
-                                    <img src="./images/icon-bedroom.svg" alt="" title="" class="ml-15 mr-5" />4
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="bds-box  position-relative ">
-                        <a href="#" target="_self" title="" class=" rounded bds-box-wrapper">
-                            <div class="image-wrap">
-                                <img src="images/icon-heart.svg" alt="icon-heart" title="icon-heart" class="icon-heart">
-                                <img src="images/info-bds/img-1.png" alt="" title="" class=" d-block w-100" />
-                                <span class="image-num">10 hình</span>
-                            </div>
-                            <div class="p-15">
-                                <span class="">
-                                    <strong class="text-accent text-18 text-lg-24 mr-5">1000 tỷ</strong>
-                                    <sup class="text-accent text-16">| 5 x 16m</sup>
-                                </span>
-                                <span class="float-right mt-5 text-gray text-14 text-xs-12">100 triệu/m²</span>
-                                <p class="my-10 text-16 text-xs-14 text-base">Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình.</p>
-                                <p class="text-gray-light text-14 text-xs-12">A02182021 • Xã Phú Xuân, Huyện Nhà Bè</p>
-                                <p class="text-14 text-gray-light d-flex">
-                                    <img src="./images/icon-compass.svg" alt="" title="" class="mr-5" />Tây Tứ Trạch <img src="./images/icon-bathtub.svg" alt="" title="" class="ml-15 mr-5" />5
-                                    <img src="./images/icon-bedroom.svg" alt="" title="" class="ml-15 mr-5" />4
-                                </p>
-                            </div>
-                        </a>
+                <h2 class="block-title  text-xs-20">Mua bán bất động sản</h2>
+                <div class="row">
+                    <div class="col-12  click-text    mt-10">
+                        <div class="slider-text tabs">
+                            <a href="#tabs-1" target="_self" title="Tất cả " class="item-text text-center d-block">
+                                   Tất cả 
+                                </a>
+                            <a href="#tabs-2" target="_self" title="TP.HCM " class="item-text d-block">
+                                    TP.HCM 
+                                 </a>
+                            <a href="#" target="_self" title="Hải Phòng " class="item-text d-block">
+                                   Hải Phòng
+                                 </a>
+                            <a href="#" target="_self" title="Hải Dương " class="item-text d-block">
+                                    Hải Dương 
+                                 </a>
+                            <a href="#" target="_self" title="Quảng Ninh " class="item-text d-block">
+                                    Quảng Ninh 
+                                 </a>
+                            <a href="#" target="_self" title="Hải Dương " class="item-text d-block">
+                                    Hải Dương 
+                                 </a>
+                            <a href="#" target="_self" title="Quảng Ninh " class="item-text d-block">
+                                    Quảng Ninh 
+                                 </a>
+                            <a href="#" target="_self" title="TP.HCM " class="item-text d-block">
+                                    TP.HCM 
+                                 </a>
+                            <a href="#" target="_self" title="Hải Phòng " class="item-text d-block">
+                                   Hải Phòng
+                                 </a> <a href="#" target="_self" title="Quảng Ninh " class="item-text d-block">
+                                    Quảng Ninh 
+                                 </a>
+                            <a href="#" target="_self" title="Hải Dương " class="item-text d-block">
+                                    Hải Dương 
+                                 </a>
+                        </div>
                     </div>
                 </div>
-
-
             </div>
+            <div class="container">
+                <div class="row  pt-30 pt-xs-20">
+                    <div id="tabs-1" class="col-12 grid-box grid-box-3 box-show-hide hide-scrollbar ">
+                        <a href="#" target="_self" title="" class="d-block rounded bds-box mb-xs-30">
+                            <div class="image-wrap">
+                                <img src="images/icon-heart.svg" alt="icon-heart" title="icon-heart" class="icon-heart">
+                                <img src="images/info-bds/img-1.png" alt="" title="" class=" d-block w-100" />
+                                <span class="image-num">10 hình</span>
+                            </div>
+                            <div class="p-15">
+                                <span class="">
+                           <strong class="text-accent text-18 text-lg-24 mr-5">1000 tỷ</strong>
+                           <sup class="text-accent text-16">| 5 x 16m</sup>
+                           </span>
+                                <span class="float-right mt-5 text-gray text-14 text-xs-12">100 triệu/m²</span>
+                                <p class="text-bds-highlights ">Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình. Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà
+                                    thực tế đẹp hơn trong hình.Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình.</p>
+                                <p class="text-gray-light text-14 text-xs-12">A02182021 • Xã Phú Xuân, Huyện Nhà Bè</p>
+                                <p class="text-14 text-gray-light d-flex">
+                                    <img src="./images/icon-compass.svg" alt="" title="" class="mr-5" />Tây Tứ Trạch <img src="./images/icon-bathtub.svg" alt="" title="" class="ml-15 mr-5" />5
+                                    <img src="./images/icon-bedroom.svg" alt="" title="" class="ml-15 mr-5" />4
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" target="_self" title="" class="d-block rounded bds-box mb-xs-30">
+                            <div class="image-wrap">
+                                <img src="images/icon-heart.svg" alt="icon-heart" title="icon-heart" class="icon-heart">
+                                <img src="images/info-bds/img-1.png" alt="" title="" class=" d-block w-100" />
+                                <span class="image-num">10 hình</span>
+                            </div>
+                            <div class="p-15">
+                                <span class="">
+                           <strong class="text-accent text-18 text-lg-24 mr-5">1000 tỷ</strong>
+                           <sup class="text-accent text-16">| 5 x 16m</sup>
+                           </span>
+                                <span class="float-right mt-5 text-gray text-14 text-xs-12">100 triệu/m²</span>
+                                <p class="text-bds-highlights ">Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình. Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà
+                                    thực tế đẹp hơn trong hình.Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình.</p>
+                                <p class="text-gray-light text-14 text-xs-12">A02182021 • Xã Phú Xuân, Huyện Nhà Bè</p>
+                                <p class="text-14 text-gray-light d-flex">
+                                    <img src="./images/icon-compass.svg" alt="" title="" class="mr-5" />Tây Tứ Trạch <img src="./images/icon-bathtub.svg" alt="" title="" class="ml-15 mr-5" />5
+                                    <img src="./images/icon-bedroom.svg" alt="" title="" class="ml-15 mr-5" />4
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" target="_self" title="" class="d-none d-md-block rounded bds-box mb-xs-30">
+                            <div class="image-wrap">
+                                <img src="images/icon-heart.svg" alt="icon-heart" title="icon-heart" class="icon-heart">
+                                <img src="images/info-bds/img-1.png" alt="" title="" class=" d-block w-100" />
+                                <span class="image-num">10 hình</span>
+                            </div>
+                            <div class="p-15">
+                                <span class="">
+                           <strong class="text-accent text-18 text-lg-24 mr-5">1000 tỷ</strong>
+                           <sup class="text-accent text-16">| 5 x 16m</sup>
+                           </span>
+                                <span class="float-right mt-5 text-gray text-14 text-xs-12">100 triệu/m²</span>
+                                <p class="text-bds-highlights ">Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình. Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà
+                                    thực tế đẹp hơn trong hình.Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình.</p>
+                                <p class="text-gray-light text-14 text-xs-12">A02182021 • Xã Phú Xuân, Huyện Nhà Bè</p>
+                                <p class="text-14 text-gray-light d-flex">
+                                    <img src="./images/icon-compass.svg" alt="" title="" class="mr-5" />Tây Tứ Trạch <img src="./images/icon-bathtub.svg" alt="" title="" class="ml-15 mr-5" />5
+                                    <img src="./images/icon-bedroom.svg" alt="" title="" class="ml-15 mr-5" />4
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" target="_self" title="" class=" rounded bds-box mb-xs-30 item-show-hide">
+                            <div class="image-wrap">
+                                <img src="images/icon-heart.svg" alt="icon-heart" title="icon-heart" class="icon-heart">
+                                <img src="images/info-bds/img-1.png" alt="" title="" class=" d-block w-100" />
+                                <span class="image-num">20000 hình</span>
+                            </div>
+                            <div class="p-15">
+                                <span class="">
+                           <strong class="text-accent text-18 text-lg-24 mr-5">1000 tỷ</strong>
+                           <sup class="text-accent text-16">| 5 x 16m</sup>
+                           </span>
+                                <span class="float-right mt-5 text-gray text-14 text-xs-12">100 triệu/m²</span>
+                                <p class="text-bds-highlights ">Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình. Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà
+                                    thực tế đẹp hơn trong hình.Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình.</p>
+                                <p class="text-gray-light text-14 text-xs-12">A02182021 • Xã Phú Xuân, Huyện Nhà Bè</p>
+                                <p class="text-14 text-gray-light d-flex">
+                                    <img src="./images/icon-compass.svg" alt="" title="" class="mr-5" />Tây Tứ Trạch <img src="./images/icon-bathtub.svg" alt="" title="" class="ml-15 mr-5" />5
+                                    <img src="./images/icon-bedroom.svg" alt="" title="" class="ml-15 mr-5" />4
+                                </p>
+                            </div>
+                        </a>
 
+                    </div>
+                    <div id="tabs-2" class="col-12 grid-box grid-box-3 box-show-hide hide-scrollbar ">
+                        <a href="#" target="_self" title="" class="d-block rounded bds-box mb-xs-30">
+                            <div class="image-wrap">
+                                <img src="images/icon-heart.svg" alt="icon-heart" title="icon-heart" class="icon-heart">
+                                <img src="images/info-bds/img-1.png" alt="" title="" class=" d-block w-100" />
+                                <span class="image-num">10 hình</span>
+                            </div>
+                            <div class="p-15">
+                                <span class="">
+                           <strong class="text-accent text-18 text-lg-24 mr-5">1000 tỷ</strong>
+                           <sup class="text-accent text-16">| 5 x 16m</sup>
+                           </span>
+                                <span class="float-right mt-5 text-gray text-14 text-xs-12">100 triệu/m²</span>
+                                <p class="text-bds-highlights ">Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình. Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà
+                                    thực tế đẹp hơn trong hình.Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình.</p>
+                                <p class="text-gray-light text-14 text-xs-12">A02182021 • Xã Phú Xuân, Huyện Nhà Bè</p>
+                                <p class="text-14 text-gray-light d-flex">
+                                    <img src="./images/icon-compass.svg" alt="" title="" class="mr-5" />Tây Tứ Trạch <img src="./images/icon-bathtub.svg" alt="" title="" class="ml-15 mr-5" />5
+                                    <img src="./images/icon-bedroom.svg" alt="" title="" class="ml-15 mr-5" />4
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" target="_self" title="" class="d-block rounded bds-box mb-xs-30">
+                            <div class="image-wrap">
+                                <img src="images/icon-heart.svg" alt="icon-heart" title="icon-heart" class="icon-heart">
+                                <img src="images/info-bds/img-1.png" alt="" title="" class=" d-block w-100" />
+                                <span class="image-num">10 hình</span>
+                            </div>
+                            <div class="p-15">
+                                <span class="">
+                           <strong class="text-accent text-18 text-lg-24 mr-5">1000 tỷ</strong>
+                           <sup class="text-accent text-16">| 5 x 16m</sup>
+                           </span>
+                                <span class="float-right mt-5 text-gray text-14 text-xs-12">100 triệu/m²</span>
+                                <p class="text-bds-highlights ">Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình. Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà
+                                    thực tế đẹp hơn trong hình.Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình.</p>
+                                <p class="text-gray-light text-14 text-xs-12">A02182021 • Xã Phú Xuân, Huyện Nhà Bè</p>
+                                <p class="text-14 text-gray-light d-flex">
+                                    <img src="./images/icon-compass.svg" alt="" title="" class="mr-5" />Tây Tứ Trạch <img src="./images/icon-bathtub.svg" alt="" title="" class="ml-15 mr-5" />5
+                                    <img src="./images/icon-bedroom.svg" alt="" title="" class="ml-15 mr-5" />4
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" target="_self" title="" class="d-none d-md-block rounded bds-box mb-xs-30">
+                            <div class="image-wrap">
+                                <img src="images/icon-heart.svg" alt="icon-heart" title="icon-heart" class="icon-heart">
+                                <img src="images/info-bds/img-1.png" alt="" title="" class=" d-block w-100" />
+                                <span class="image-num">10 hình</span>
+                            </div>
+                            <div class="p-15">
+                                <span class="">
+                           <strong class="text-accent text-18 text-lg-24 mr-5">1000 tỷ</strong>
+                           <sup class="text-accent text-16">| 5 x 16m</sup>
+                           </span>
+                                <span class="float-right mt-5 text-gray text-14 text-xs-12">100 triệu/m²</span>
+                                <p class="text-bds-highlights ">Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình. Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà
+                                    thực tế đẹp hơn trong hình.Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình.</p>
+                                <p class="text-gray-light text-14 text-xs-12">A02182021 • Xã Phú Xuân, Huyện Nhà Bè</p>
+                                <p class="text-14 text-gray-light d-flex">
+                                    <img src="./images/icon-compass.svg" alt="" title="" class="mr-5" />Tây Tứ Trạch <img src="./images/icon-bathtub.svg" alt="" title="" class="ml-15 mr-5" />5
+                                    <img src="./images/icon-bedroom.svg" alt="" title="" class="ml-15 mr-5" />4
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" target="_self" title="" class=" rounded bds-box mb-xs-30 item-show-hide">
+                            <div class="image-wrap">
+                                <img src="images/icon-heart.svg" alt="icon-heart" title="icon-heart" class="icon-heart">
+                                <img src="images/info-bds/img-1.png" alt="" title="" class=" d-block w-100" />
+                                <span class="image-num">20000 hình</span>
+                            </div>
+                            <div class="p-15">
+                                <span class="">
+                           <strong class="text-accent text-18 text-lg-24 mr-5">1000 tỷ</strong>
+                           <sup class="text-accent text-16">| 5 x 16m</sup>
+                           </span>
+                                <span class="float-right mt-5 text-gray text-14 text-xs-12">100 triệu/m²</span>
+                                <p class="text-bds-highlights ">Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình. Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà
+                                    thực tế đẹp hơn trong hình.Biệt thự mini tân cổ điển khu Green Riverside. Nhà thực tế thoáng mát, sáng, sang trọng,... nhà thực tế đẹp hơn trong hình.</p>
+                                <p class="text-gray-light text-14 text-xs-12">A02182021 • Xã Phú Xuân, Huyện Nhà Bè</p>
+                                <p class="text-14 text-gray-light d-flex">
+                                    <img src="./images/icon-compass.svg" alt="" title="" class="mr-5" />Tây Tứ Trạch <img src="./images/icon-bathtub.svg" alt="" title="" class="ml-15 mr-5" />5
+                                    <img src="./images/icon-bedroom.svg" alt="" title="" class="ml-15 mr-5" />4
+                                </p>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
+        <!-- //ANCHOR nhà cho thuê -->
+        <div class="padding-block">
+            <div class="container">
+                <h2 class="block-title text-xs-20">Nhà cho thuê</h2>
+                <div class="row">
+                </div>
+            </div>
         </div>
         <!-- //ANCHOR dự án bất động sản -->
         <div class="padding-block bg-light-brown">
             <div class="container">
+                <h2 class="block-title text-xs-20">Dự án bất động sản</h2>
                 <div class="row">
-                    <div class="col-md-6 d-flex  mb-xs-30">
-                        <div class="bg-white p-20 shadow3">
+                    <div class="col-md-6  mb-xs-20 mb-30">
+                        <div class="bg-white p-20  shadow3">
                             <a href="#" target="_self" title="" class=" rounded bds-box bds-box-wrapper">
                                 <div class="image-wrap">
                                     <img src="images/projcet-ds/img-bds.png" alt="" title="" class=" d-block w-100 border-radius-4" />
@@ -355,24 +716,24 @@
                                         <p class="d-none d-lg-block">
                                             <strong class="float-right">Căn hộ chung cư</strong>
                                             <span class="text-gray-light">Loại hình:</span>
-
                                         </p>
-
-                                        <p class="d-flex box-text d-lg-none">
+                                        <p class="d-flex item-text-real-estate d-lg-none">
                                             <span class="mr-2">Quy mô :</span>
                                             <span><strong>8</strong> block <strong>1,6500</strong> căn hộ</span>
                                         </p>
-                                        <p class="d-block d-lg-none">
-                                            <strong class="float-right">2018</strong>
-                                            <span class="text-gray-light">Năm xây dựng</span>
+                                        <p class="d-flex item-text-real-estate d-lg-none">
+                                            <span class="mr-2">Năm xây dựng :</span>
+                                            <span>2018</span>
                                         </p>
-                                        <p>
-                                            <strong class="float-right text-primary">39 triệu/m2</strong>
-                                            <span class="text-gray-light">Giá từ </span>
+                                        <p class="d-flex item-text-real-estate  text-gray-light">
+                                            <span class="mr-2">     Giá từ</span>
+                                            <strong>   39 triệu/m2</strong>
                                         </p>
                                     </div>
                                     <div class="col-6 d-none d-lg-block">
-                                        <p> <span class="text-gray-light">Năm xây dựng:</span><strong> 2018</strong></p>
+                                        <p>
+                                            <strong class="float-right"> 2018</strong> <span class="text-gray-light">Năm xây dựng:</span>
+                                        </p>
                                         <p>
                                             <strong class="float-right"> 3</strong> <span class="text-gray-light">Số block</span>
                                         </p>
@@ -380,77 +741,165 @@
                                             <strong class="float-right"> 123</strong><span class="text-gray-light">Số căn</span>
                                         </p>
                                     </div>
-
-
                                 </div>
                             </a>
-                            <a href="#" class="text-18 text-underline text-main font-weight-bold">Xem thông tin dự án
+                            <a href="#" class="text-more-project ">Xem thông tin dự án
                         <img src="images/long-arrow-right-blue.svg" alt="Xem thông tin dự án" title="Xem thông tin dự án" class="ml-10">    
-                    </a>
+                        </a>
                         </div>
-
                     </div>
-                    <div class="col-md-6 d-flex">
-                        <div class="bg-white p-20 shadow3">
+                    <div class="col-md-6  mb-xs-20 mb-30">
+                        <div class="bg-white p-20  shadow3">
+                            <a href="#" target="_self" title="" class=" rounded bds-box bds-box-wrapper">
+                                <div class="image-wrap">
+                                    <img src="images/projcet-ds/img-bds.png" alt="img-bds" title="img-bds" class=" d-block w-100 border-radius-4" />
+                                    <span class="image-num">Sắp mở bán</span>
+                                </div>
+                                <h3 class="text-secondary font-weight-bold mt-15 mt-xs-10">Chung cư Citizen.TS</h3>
+                                <p class="my-10  text-xs-14 text-gray-light">Nguyễn Xiển, Phường Long Bình, Long Thạnh Mỹ, Quận 9, Hồ Chí Minh</p>
+                                <div class="row">
+                                    <div class="col-lg-6 ">
+                                        <p class="mb-5 d-none d-lg-block">
+                                            <strong class="float-right">Đã hoàn thành</strong>
+                                            <span class="text-gray-light">Tiến độ:</span>
+                                        </p>
+                                        <p class="d-none d-lg-block">
+                                            <strong class="float-right">Căn hộ chung cư</strong>
+                                            <span class="text-gray-light">Loại hình:</span>
+                                        </p>
+                                        <p class="d-flex item-text-real-estate d-lg-none">
+                                            <span class="mr-2">Quy mô :</span>
+                                            <span><strong>8</strong> block <strong>1,6500</strong> căn hộ</span>
+                                        </p>
+                                        <p class="d-flex item-text-real-estate d-lg-none">
+                                            <span class="mr-2">Năm xây dựng :</span>
+                                            <span>2018</span>
+                                        </p>
+                                        <p class="d-flex item-text-real-estate  text-gray-light">
+                                            <span class="mr-2">     Giá từ</span>
+                                            <strong>   39 triệu/m2</strong>
+                                        </p>
+                                    </div>
+                                    <div class="col-6 d-none d-lg-block">
+                                        <p>
+                                            <strong class="float-right"> 2018</strong> <span class="text-gray-light">Năm xây dựng:</span>
+                                        </p>
+                                        <p>
+                                            <strong class="float-right"> 3</strong> <span class="text-gray-light">Số block</span>
+                                        </p>
+                                        <p>
+                                            <strong class="float-right"> 123</strong><span class="text-gray-light">Số căn</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="text-more-project ">Xem thông tin dự án
+                        <img src="images/long-arrow-right-blue.svg" alt="Xem thông tin dự án" title="Xem thông tin dự án" class="ml-10">    
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6  mb-xs-20 mb-30">
+                        <div class="bg-white p-20  shadow3">
                             <a href="#" target="_self" title="" class=" rounded bds-box bds-box-wrapper">
                                 <div class="image-wrap">
                                     <img src="images/projcet-ds/img-bds.png" alt="" title="" class=" d-block w-100 border-radius-4" />
                                     <span class="image-num">Sắp mở bán</span>
                                 </div>
-                                <h3 class="text-secondary font-weight-bold">Chung cư Citizen.TS</h3>
-                                <p class="my-10  text-xs-14 text-base">Nguyễn Xiển, Phường Long Bình, Long Thạnh Mỹ, Quận 9, Hồ Chí Minh</p>
+                                <h3 class="text-secondary font-weight-bold mt-15 mt-xs-10">Chung cư Citizen.TS</h3>
+                                <p class="my-10  text-xs-14 text-gray-light">Nguyễn Xiển, Phường Long Bình, Long Thạnh Mỹ, Quận 9, Hồ Chí Minh</p>
                                 <div class="row">
                                     <div class="col-lg-6 ">
-                                        <p class="mb-5 text-xs-14  d-none d-lg-block">
+                                        <p class="mb-5 d-none d-lg-block">
                                             <strong class="float-right">Đã hoàn thành</strong>
                                             <span class="text-gray-light">Tiến độ:</span>
                                         </p>
-                                        <p class="text-xs-14  d-none d-lg-block">
+                                        <p class="d-none d-lg-block">
                                             <strong class="float-right">Căn hộ chung cư</strong>
                                             <span class="text-gray-light">Loại hình:</span>
-
                                         </p>
-                                        <p class="d-block d-lg-none text-xs-14">
-                                            Quy mô
-                                            <strong>8</strong> block <strong>1,6500</strong> căn hộ
-
+                                        <p class="d-flex item-text-real-estate d-lg-none">
+                                            <span class="mr-2">Quy mô :</span>
+                                            <span><strong>8</strong> block <strong>1,6500</strong> căn hộ</span>
                                         </p>
-                                        <p class="d-block d-lg-none text-xs-14 text-gray-light">
-                                            Năm xây dựng
-                                            <strong>2018</strong>
+                                        <p class="d-flex item-text-real-estate d-lg-none">
+                                            <span class="mr-2">Năm xây dựng :</span>
+                                            <span>2018</span>
                                         </p>
-                                        <p class="d-flex d-lg-none text-xs-14 text-gray-light">
-                                            Năm xây g
-                                            <strong>2018</strong>
-                                        </p>
-                                        <p class="text-xs-14">
-                                            <strong class="float-right text-primary">39 triệu/m2</strong>
-                                            <span class="text-gray-light">Giá từ </span>
+                                        <p class="d-flex item-text-real-estate  text-gray-light">
+                                            <span class="mr-2">     Giá từ</span>
+                                            <strong>   39 triệu/m2</strong>
                                         </p>
                                     </div>
                                     <div class="col-6 d-none d-lg-block">
-                                        <p class="text-gray-light text-xs-14"> <strong class="float-right">2018</strong>
-                                            <span class="text-gray-light">Năm xây dựng</span></p>
-                                        <p class="text-xs-14">
-                                            <strong class="float-right  text-xs-14"> 3</strong> <span class="text-gray-light ">Số block</span>
+                                        <p>
+                                            <strong class="float-right"> 2018</strong> <span class="text-gray-light">Năm xây dựng:</span>
                                         </p>
-                                        <p class="text-xs-14">
-                                            <strong class="float-right  text-xs-14"> 123</strong><span class="text-gray-light ">Số căn</span>
+                                        <p>
+                                            <strong class="float-right"> 3</strong> <span class="text-gray-light">Số block</span>
+                                        </p>
+                                        <p>
+                                            <strong class="float-right"> 123</strong><span class="text-gray-light">Số căn</span>
                                         </p>
                                     </div>
-
-
                                 </div>
                             </a>
-                            <a href="# " class="text-lg-18 text-underline text-main font-weight-bold  d-none d-md-block">Xem thông tin dự án
-                        <img src="images/long-arrow-right-blue.svg " alt="Xem thông tin dự án " title="Xem thông tin dự án " class="ml-10 ">    
-                    </a>
+                            <a href="#" class="text-more-project ">Xem thông tin dự án
+                        <img src="images/long-arrow-right-blue.svg" alt="Xem thông tin dự án" title="Xem thông tin dự án" class="ml-10">    
+                        </a>
                         </div>
-
+                    </div>
+                    <div class="col-md-6  mb-xs-20 mb-30">
+                        <div class="bg-white p-20  shadow3">
+                            <a href="#" target="_self" title="" class=" rounded bds-box bds-box-wrapper">
+                                <div class="image-wrap">
+                                    <img src="images/projcet-ds/img-bds.png" alt="" title="" class=" d-block w-100 border-radius-4" />
+                                    <span class="image-num">Sắp mở bán</span>
+                                </div>
+                                <h3 class="text-secondary font-weight-bold mt-15 mt-xs-10">Chung cư Citizen.TS</h3>
+                                <p class="my-10  text-xs-14 text-gray-light">Nguyễn Xiển, Phường Long Bình, Long Thạnh Mỹ, Quận 9, Hồ Chí Minh</p>
+                                <div class="row">
+                                    <div class="col-lg-6 ">
+                                        <p class="mb-5 d-none d-lg-block">
+                                            <strong class="float-right">Đã hoàn thành</strong>
+                                            <span class="text-gray-light">Tiến độ:</span>
+                                        </p>
+                                        <p class="d-none d-lg-block">
+                                            <strong class="float-right">Căn hộ chung cư</strong>
+                                            <span class="text-gray-light">Loại hình:</span>
+                                        </p>
+                                        <p class="d-flex item-text-real-estate d-lg-none">
+                                            <span class="mr-2">Quy mô :</span>
+                                            <span><strong>8</strong> block <strong>1,6500</strong> căn hộ</span>
+                                        </p>
+                                        <p class="d-flex item-text-real-estate d-lg-none">
+                                            <span class="mr-2">Năm xây dựng :</span>
+                                            <span>2018</span>
+                                        </p>
+                                        <p class="d-flex item-text-real-estate  text-gray-light">
+                                            <span class="mr-2">     Giá từ</span>
+                                            <strong>   39 triệu/m2</strong>
+                                        </p>
+                                    </div>
+                                    <div class="col-6 d-none d-lg-block">
+                                        <p>
+                                            <strong class="float-right"> 2018</strong> <span class="text-gray-light">Năm xây dựng:</span>
+                                        </p>
+                                        <p>
+                                            <strong class="float-right"> 3</strong> <span class="text-gray-light">Số block</span>
+                                        </p>
+                                        <p>
+                                            <strong class="float-right"> 123</strong><span class="text-gray-light">Số căn</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="text-more-project ">Xem thông tin dự án
+                        <img src="images/long-arrow-right-blue.svg" alt="Xem thông tin dự án" title="Xem thông tin dự án" class="ml-10">    
+                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
         <div class="py-60 py-xs-20 ">
             <div class="container ">
@@ -458,7 +907,6 @@
                 <p class="text-gray-light mb-30 ">Tin tức mới nhất, phân tích xu hướng thị trường, cập nhật nhanh chóng và chính xác hàng ngày</p>
                 <div class="row ">
                     <div class="col-md-6 ">
-
                         <a href="# " target="_self" title="" class="position-relative border-radius-4 w-100 h-100 d-block">
                             <div class="bg h-100 d-none d-md-block" style="background-image: url(./images/info-bds/img-1.png);"></div>
                             <img src="images/projcet-ds/img-bds.png" alt="img-bds" class="img-fluid w-100 h-100 d-block d-md-none">
@@ -503,14 +951,10 @@
                             <span class="text-18 text-primary mr-10 ">Xem thêm bài viết</span>
                             <img src="./images/arrow-right-info.svg " alt="arrow-right-info " title="arrow-right-info ">
                         </a>
-
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- ANCHOR nha cho thue -->
-
         <!-- //ANCHOR gray -->
         <div class="py-60 mx-xs-15 py-xs-20 bg-light-brown ">
             <div class="container ">
@@ -533,6 +977,7 @@
                 </div>
             </div>
         </div>
+        <div id="import_block-contact"></div>
     </main>
     <footer>
         <div class="container ">
@@ -638,7 +1083,7 @@
                                     </div>
                                     <div class="form-group ">
                                         <button type="submit " class="btn btn-primary max-w-100 ">
-                                                <img src="./images/icon-arrow-right-white.svg " alt="Gửi " title="Gửi " class="d-lg-none "><span class="hidden-xs ">Gửi</span></button>
+                                 <img src="./images/icon-arrow-right-white.svg " alt="Gửi " title="Gửi " class="d-lg-none "><span class="hidden-xs ">Gửi</span></button>
                                     </div>
                                 </form>
                             </div>
@@ -652,7 +1097,10 @@
         </div>
     </footer>
     <!-- //ANCHOR jquery -->
+
     <script src="js/jquery-3.5.1.min.js "></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/jquery-ui.min.js "></script>
     <script src="js/slick.js "></script>
     <script src="js/popper.min.js "></script>
@@ -660,23 +1108,42 @@
     <script src="js/select2/select2.min.js "></script>
     <script src="js/lazysizes.min.js "></script>
     <script src="js/ls.bgset.min.js "></script>
-    <script src="js/style.js?v=1 "></script>
+   
     <script>
         $(function() {
-            $('.slider-banner').slick({
+            $("#tabs").tabs();
+            $('.slider-box').slick({
                 infinite: true,
+                draggable: true,
                 speed: 300,
                 slidesToShow: 4,
                 slidesToScroll: 1,
-                arrows: false,
                 responsive: [{
                     breakpoint: 992,
                     settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 3,
                         variableWidth: true
                     }
                 }]
             });
+            $('.slider-text').slick({
+                infinite: true,
+                speed: 300,
+                arrows: true,
+                slidesToShow: 8,
+                slidesToScroll: 1,
+                responsive: [{
+                    breakpoint: 1200,
+                    settings: {
+                        draggable: true,
+                        arrows: false,
+                        slidesToShow: 3,
+                        slidesToScroll: 2,
+                        variableWidth: true
+                    }
+                }]
+            });
+            $("#import_block-contact").load("import/import_block-contact.html");
 
         });
     </script>

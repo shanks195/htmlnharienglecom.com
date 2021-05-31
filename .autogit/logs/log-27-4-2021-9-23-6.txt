@@ -1,0 +1,26 @@
+-------------------- Auto-Git Log --------------------
+		Thu May 27 2021 09:23:06 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* css/app.css
+* css/app.css.map
+* homepage.html
+* scss/_class.scss
+* scss/_variables.scss
+* scss/prepros.config
+
+
+Created files:
+* .autogit/logs/log-27-4-2021-8-52-39.txt
+* "images/Nha Rieng Le (Desktop) (1).zip"
+* "images/Nha Rieng Le (Desktop).zip"
+* images/click-cricle-left.svg
+* images/click-cricle-right.svg
+
+
+Deleted files:
+* images/icon-clock-gray.zip
+
+
+Renamed files:

@@ -29,7 +29,7 @@
 }
 
 .bg-light-brown {
-    background-color: $light-brown;
+    background-color: $light-brown!important;
 }
 
 .bg-gray-contact {
@@ -73,9 +73,7 @@
 .border-none {
     border: none!important;
 }
-.bg-light-brown {
-    background-color:#f2f2f2;
-}
+
 a:hover .fb-gray {
     display: none;
 }

@@ -1,0 +1,21 @@
+-------------------- Auto-Git Log --------------------
+		Sat May 29 2021 09:39:52 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* components.html
+* css/app.css
+* css/app.css.map
+* homepage.html
+* scss/_class.scss
+
+
+Created files:
+* .autogit/logs/log-29-4-2021-9-9-30.txt
+* images/icon-blue-right.svg
+
+
+Deleted files:
+
+
+Renamed files:

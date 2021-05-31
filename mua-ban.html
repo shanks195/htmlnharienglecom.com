@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tin Tức</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="css/jquery-ui.min.css" />
+        <link rel="stylesheet" href="js/select2/select2.min.css">
+        <link rel="stylesheet" href="css/app.css?v=2" />
+    </head>
+    <body>  
+        <header>
+            <div class="container">
+                <div class="header-left">
+                    <a href="#" class="mr-20" target="_self" title="Logo">
+                        <img src="./images/sx.svg" data-src="./images/logo.svg" alt="Logo" title="Logo" class="lazyload" />
+                    </a>
+                    <div class="menu-header-mobile">
+                        <div class="overlay d-lg-none"></div>
+                        <div class="menu-header-wrapper">
+                            <a href="#" class="pl-15 pt-10 d-inline-block d-lg-none" target="_self" title="Logo">
+                                <img src="./images/sx.svg" data-src="./images/logo.svg" alt="Logo" title="Logo" class="lazyload" />
+                            </a>
+                            <a href="javascript:void(0)" id="close-mobile-menu" class="float-right mr-20 mt-20 d-lg-none" target="_self" title="Close">
+                                <img src="./images/sx.svg" data-src="./images/icon-close.svg" alt="Close" title="Close" class="lazyload" />
+                            </a>
+                            <hr class="d-lg-none" />
+                            <div class="row px-15 d-lg-none">
+                                <div class="col-6">
+                                    <a href="#" target="_self" title="Đăng nhập" class="btn btn-block btn-smaller btn-outline-black">Đăng nhập</a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" target="_self" title="Đăng nhập" class="btn btn-block btn-smaller btn-outline-main">Đăng ký</a>
+                                </div>
+                            </div>
+                            <hr class="mb-0 d-lg-none" />
+                            <ul class="menu-header px-xs-15">
+                                <li class="d-block d-lg-none">
+                                    <a href="#" target="_self" title="Trang chủ">Trang chủ</a>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="javascript:void(0)" target="_self" title="Mua & Bán">Mua & Bán</a>
+                                    <ul class="dropdown-menu-header">
+                                        <li><a href="#" target="_self" title="Mua & Bán 1">Mua & Bán 1</a></li>
+                                        <li><a href="#" target="_self" title="Mua & Bán 2">Mua & Bán 2</a></li>
+                                        <li><a href="#" target="_self" title="Mua & Bán 3">Mua & Bán 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="javascript:void(0)" target="_self" title="Thuê">Thuê</a>
+                                    <ul class="dropdown-menu-header">
+                                        <li><a href="#" target="_self" title="Thuê 1">Thuê 1</a></li>
+                                        <li><a href="#" target="_self" title="Thuê 2">Thuê 2</a></li>
+                                        <li><a href="#" target="_self" title="Thuê 3">Thuê 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="javascript:void(0)" target="_self" title="Dự án">Dự án</a>
+                                    <ul class="dropdown-menu-header">
+                                        <li><a href="#" target="_self" title="Dự án">Dự án 1</a></li>
+                                        <li><a href="#" target="_self" title="Dự án">Dự án 2</a></li>
+                                        <li><a href="#" target="_self" title="Dự án">Dự án 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="d-block d-lg-none">
+                                    <a href="#" target="_self" title="Tin tức">Tin tức</a>
+                                </li>
+                                <li class="d-block d-lg-none">
+                                    <a href="#" target="_self" title="Tuyển dụng">Tuyển dụng</a>
+                                </li>
+                                <li class="d-flex d-lg-none justify-content-between">
+                                    <a href="#" target="_self" title="Đăng tin nhà đất">Đăng tin nhà đất</a>
+                                    <img src="./images/sx.svg" data-src="./images/icon-upload.svg" alt="Upload" title="Upload" class="lazyload" />
+                                </li>
+                                <li class="d-block d-lg-none">
+                                    <a href="tel:18006269" target="_self" title="Hotline: 1800 6269">Hotline: <strong>1800 6269</strong></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-right flex-center">
+                    <a href="tel:18006296" class="text-main text-18 mr-10 d-none d-lg-block text-highlight" target="_blank" title="1800 6296">
+                        <img src="./images/sx.svg" data-src="./images/icon-phone-blue.svg" alt="1800 6296" title="1800 6296" class="lazyload" /><strong>1800 6296</strong>
+                    </a>
+                    <a href="tel:18006296" target="_blank" class="d-inline-block d-lg-none mr-20" title="1800 6296">
+                        <img src="./images/sx.svg" data-src="./images/icon-phone-black.svg" alt="1800 6296" title="1800 6296" class="lazyload" />
+                    </a>
+                    <ul class="header-nav list-unstyled d-none d-lg-inline-block mb-0">
+                        <li class="d-inline-block"><a href="" target="_self" title="Tin tức" class="p-10 text-link">Tin tức</a></li>
+                        <li class="d-inline-block"><a href="" target="_self" title="Tuyển dụng" class="p-10 text-link">Tuyển dụng</a></li>
+                    </ul>
+                    <span class="d-none d-lg-inline-block">|</span>
+                    <a href="#" target="_self" title="Đăng nhập" class="p-10 d-none d-lg-inline-block text-link">Đăng nhập</a>
+                    <a href="" target="_self" title="Đăng tin nhà đất" class="btn btn-primary btn-smaller d-none d-lg-inline-block">Đăng tin nhà đất</a>
+                    <a href="javascript:void(0)" title="Menu" target="_self" id="icon-bar" class="icon-bar d-inline-block d-lg-none"></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <nav class="breadcrumb-bg bg-white w-100 custom-breadcumb-xs text-main d-none d-lg-block">
+                <div class="container">
+                    <ol class="breadcrumb d-flex mb-0">
+                        <li class="breadcrumb-item text-14">
+                            <a href="#BĐS" target="_self" title="BĐS">BĐS</a>
+                        </li>
+                        <li class="breadcrumb-item text-14">
+                            <a href="#HCM" target="_self" title="HCM">HCM</a>
+                        </li>
+                    </ol>
+                </div>
+            </nav>
+            <div class="container ">
+                <div class="row">
+                    <div class="col-9 pt-40">
+                        <div class="" style="width: 300px;">
+                            <!-- <div id="filter-price-range" class="range-custom-1">
+                                <div class="filter-text-run">
+                                    <div class="rounded left-run text-white text-16 pl-5 pr-5 pt-5 pb-5">
+                                        4
+                                    </div>
+                                    <div class="rounded merge-run text-white text-16 pl-5 pr-5 pt-5 pb-5">
+                                        <span class="left-value">4</span>
+                                        -
+                                        <span class="right-value">10</span> 
+                                    </div>
+                                    <div class="rounded right-run text-white text-16 pl-5 pr-5 pt-5 pb-5">
+                                        10
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="fast-search bg-light-brown rounded">
+                            <span class="title d-none d-lg-block bg-secondary text-white px-20 pt-10 pb-15">
+                                TÌM KIẾM NHANH
+                            </span>
+                            <div class="mt-18">
+                                <ul class="nav nav-tabs justify-content-center px-10" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                      <a class="nav-link active" data-toggle="tab" href="#search-mua" role="tab" >Mua</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <a class="nav-link" data-toggle="tab" href="#search-thue" role="tab" >Thuê</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <a class="nav-link" data-toggle="tab" href="#search-du-an" role="tab" >Dự án</a>
+                                    </li>
+                                </ul>
+                                  <div class="tab-content bg-white py-20 px-10" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="search-mua" role="tabpanel">
+                                        <form action="" class="">
+                                            <!-- Loại hình bds -->
+                                            <div class="form-group d-flex align-items-center position-relative w-auto">
+                                                <span class="text-14 pr-20">Loại hình BĐS</span>
+                                                <div class="form-select-1 w-50 h-36px flex-grow-1">
+                                                    <select class="bds-types">
+                                                        <option></option>
+                                                        <option value="Tất cả">Tất cả</option>
+                                                        <option value="Căn Hộ Cao Câp">Căn Hộ Cao Câp</option>
+                                                        <option value="Nhà Phố Thương Mại">Nhà Phố Thương Mại</option>
+                                                        <option value="Nhà biệt thự liền kề">Nhà biệt thự liền kề</option>
+                                                        <option value="Đất nền dự án">Đất nền dự án</option>
+                                                        <option value="Mặt bằng văn phòng">Mặt bằng văn phòng</option>
+                                                        <option value="Mặt bằng bán lẻ">Mặt bằng bán lẻ</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <!-- các tỉnh thành -->
+                                            <div class="form-group position-relative w-auto">
+                                                <div class="form-select-1 h-36px flex-grow-1">
+                                                    <select class="province-types">
+                                                        <option></option>
+                                                        <option value="Căn Hộ Cao Câp">Tp Hồ Chí Minh</option>
+                                                        <option value="Nhà Phố Thương Mại">Hải Phòng</option>
+                                                        <option value="Nhà biệt thự liền kề">Hà Nội</option>
+                                                        <option value="Đất nền dự án">Cấn Thơ</option>
+                                                        <option value="Mặt bằng văn phòng">Bến Tre</option>
+                                                        <option value="Mặt bằng bán lẻ">Vũng Tàu</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <!-- Quận Huyện -->
+                                            <div class="form-group position-relative w-auto">
+                                                <div class="form-select-1 h-36px flex-grow-1">
+                                                    <select class="quan-huyen-types">
+                                                        <option></option>
+                                                        <option value="Căn Hộ Cao Câp">Huyện Châu Thành</option>
+                                                        <option value="Nhà Phố Thương Mại">Huyện Tân Thành</option>
+                                                        <option value="Nhà biệt thự liền kề">Hà Nội</option>
+                                                        <option value="Đất nền dự án">Huyện Cần Giờ</option>
+                                                        <option value="Mặt bằng văn phòng">Huyện Nhà Bè</option>
+                                                        <option value="Mặt bằng bán lẻ">Huyện Nào Đó</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                             <!-- Chọn diện tích -->
+                                             <div class="form-group position-relative w-auto">
+                                                <div class="form-select-1 h-36px flex-grow-1">
+                                                    <select class="area-select">
+                                                        <option></option>
+                                                        <option value="giá 1">giá 1</option>
+                                                        <option value="giá 2">giá 2</option>
+                                                        <option value="giá 3">giá 3</option>
+                                                        <option value="giá 4">giá 4</option>
+                                                        <option value="giá 5">giá 5</option>
+                                                        <option value="giá 6">giá 6</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <!-- Mức Giá -->
+                                            <div class="">
+                                                <div class="dropdown dropdown-price">
+                                                    <span data-toggle="dropdown" class="drop-btn-1 h-36px text-13" role="button" data-value=""  data-toggle="dropdown">
+                                                      Mức giá
+                                                    </span>
+                                                    <ul class="drop-content-1 dropdown-menu">
+                                                      <li class="dropdown-item no-hover price-item" role="button">
+                                                        <div class="slide-price pt-50 mb-25">
+                                                            <div id="filter-price-range" class="range-custom-1">
+                                                                <div class="filter-text-run">
+                                                                    <div class="rounded left-run text-white text-16 pl-5 pr-5 pt-5 pb-5">
+                                                                        4
+                                                                    </div>
+                                                                    <div class="rounded merge-run text-white text-16 pl-5 pr-5 pt-5 pb-5">
+                                                                        <span class="left-value">4</span>
+                                                                        -
+                                                                        <span class="right-value">10</span> 
+                                                                    </div>
+                                                                    <div class="rounded right-run text-white text-16 pl-5 pr-5 pt-5 pb-5">
+                                                                        10
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                      </li>
+                                                      <li class="dropdown-item option" role="button" data-value="Mức giá">Mức giá</li>
+                                                      <li class="dropdown-item option" role="button" data-value="Dưới 2 tỷ">Dưới 2 tỷ</li>
+                                                      <li class="dropdown-item option" role="button" data-value="2 tỷ - 3 tỷ">2 tỷ - 3 tỷ</li>
+                                                      <li class="dropdown-item option" role="button" data-value="3 tỷ - 4 tỷ">3 tỷ - 4 tỷ</li>
+                                                      <li class="dropdown-item option" role="button" data-value="4 tỷ - 5 tỷ">4 tỷ - 5 tỷ</li>
+                                                      <li class="dropdown-item option" role="button" data-value="5 tỷ - 6 tỷ">5 tỷ - 6 tỷ</li>
+                                                      <li class="dropdown-item option" role="button" data-value="5 tỷ - 6 tỷ">5 tỷ - 6 tỷ</li>
+                                                      <li class="dropdown-item option" role="button" data-value="5 tỷ - 6 tỷ">5 tỷ - 6 tỷ</li>
+                                                      <li class="dropdown-item option" role="button" data-value="5 tỷ - 6 tỷ">5 tỷ - 6 tỷ</li>
+                                                      <li class="dropdown-item option" role="button" data-value="5 tỷ - 6 tỷ">5 tỷ - 6 tỷ</li>
+                                                      <li class="dropdown-item option" role="button" data-value="5 tỷ - 6 tỷ">5 tỷ - 6 tỷ</li>
+                                                      <li class="dropdown-item option" role="button" data-value="5 tỷ - 6 tỷ">5 tỷ - 6 tỷ</li>
+                                                    </ul>
+                                                  </div>
+                                            </div>
+                                            <!-- <div class="form-group position-relative w-auto">
+                                                <div class="form-select-1 h-36px flex-grow-1">
+                                                    <select class="price-select" style="appearance: none;">
+                                                        <option></option>
+                                                        <option value="unknoe" style="appearance: none;">
+                                                            <div>
+                                                                <p class="mb-25">hello</p>
+                                                            </div>
+                                                        </option>
+                                                        <option value="Mức giá">Mức giá</option>
+                                                        <option value="Dưới 2 tỷ">Dưới 2 tỷ</option>
+                                                        <option value="2 tỷ - 3 tỷ">2 tỷ - 3 tỷ</option>
+                                                        <option value="3 tỷ - 4 tỷ">3 tỷ - 4 tỷ</option>
+                                                        <option value="4 tỷ - 5 tỷ">4 tỷ - 5 tỷ</option>
+                                                        <option value="5 tỷ - 6 tỷ">5 tỷ - 6 tỷ</option>
+                                                    </select>
+                                                </div>
+                                            </div> -->
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="search-thue" role="tabpanel">.qư..</div>
+                                    <div class="tab-pane fade" id="search-du-an" role="tabpanel">..gref.</div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="top-footer">
+                    <div class="row">
+                        <div class="col-6 col-lg-3 my-xs-10">
+                            <div class="media">
+                                <img data-src="./images/icon-phone-black.svg" src="./images/sx.svg" alt="Hotline miễn phí" title="Hotline miễn phí" class="lazyload mr-5 mr-lg-10" />
+                                <div class="media-content">
+                                    <p class="mb-0">Hotline miễn phí</p>
+                                    <a href="tel:18006296" class="text-main" target="_blank" title="1800 6296"><strong>1800 6296</strong></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 my-xs-10">
+                            <div class="media">
+                                <img data-src="./images/icon-phone-black.svg" src="./images/sx.svg" alt="Khiếu nại, phản hồi" title="Khiếu nại, phản hồi" class="lazyload mr-5 mr-lg-10" />
+                                <div class="media-content">
+                                    <p class="mb-0">Khiếu nại, phản hồi</p>
+                                    <a href="tel:0862030402" class="text-main" target="_blank" title="0862 03 04 02"><strong>0862 03 04 02</strong></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 my-xs-10">
+                            <div class="media">
+                                <img data-src="./images/icon-mail-black.svg" src="./images/sx.svg" alt="Bộ phận kinh doanh" title="Bộ phận kinh doanh" class="lazyload mr-5 mr-lg-10 mt-5" />
+                                <div class="media-content">
+                                    <p class="mb-0">Bộ phận kinh doanh</p>
+                                    <a href="mailto:namsaigon@khaihung.vn" class="text-main" target="_blank" title="namsaigon@khaihung.vn"><strong>namsaigon@khaihung.vn</strong></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 my-xs-10">
+                            <div class="media">
+                                <img data-src="./images/icon-mail-black.svg" src="./images/sx.svg" alt="Chăm sóc khách hàng" title="Chăm sóc khách hàng" class="lazyload mr-5 mr-lg-10 mt-5" />
+                                <div class="media-content">
+                                    <p class="mb-0">Chăm sóc khách hàng</p>
+                                    <a href="mailto:support@khaihung.vn" class="text-main" target="_blank" title="support@khaihung.vn"><strong>support@khaihung.vn</strong></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-footer">
+                    <div class="row">
+                        <div class="col-lg-4 order-xs-2 text-xs-center">
+                            <p>Website <a href="www.nhariengle.com" target="_self" title="www.nhariengle.com" class="text-link">www.nhariengle.com</a> được điều hành bởi <strong>KHAIHUNG LAND™</strong></p>
+                            <a href="#" target="_self" title="Logo" class="d-inline-block mb-15">
+                                <img data-src="./images/logo.svg" src="./images/sx.svg" alt="Logo" title="Logo" class="lazyload" />
+                            </a>
+                            <div class="media">
+                                <img data-src="./images/icon-map.svg" src="./images/sx.svg" alt="Hotline miễn phí" title="Hotline miễn phí" class="lazyload mr-10 mt-5" />
+                                <div class="media-content">
+                                    <p>153 Trần Trọng Cung, Phường Tân Thuận Đông, Quận 7, TP. Hồ Chí Minh</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <h3 class="footer-title has-dropdown">VỀ CHÚNG TÔI</h3>
+                                    <ul class="footer-nav">
+                                        <li><a href="#" target="_self" title="Giới thiệu">Giới thiệu</a></li>
+                                        <li><a href="#" target="_self" title="Đăng tin">Đăng tin</a></li>
+                                        <li><a href="#" target="_self" title="Tuyển dụng">Tuyển dụng</a></li>
+                                        <li><a href="#" target="_self" title="Liên hệ">Liên hệ</a></li>
+                                        <li><a href="#" target="_self" title="Tin tức">Tin tức</a></li>
+                                    </ul>
+                                    <hr class="hr-basic m-0 mb-15 d-lg-none">
+                                </div>
+                                <div class="col-lg-3">
+                                    <h3 class="footer-title has-dropdown">DỊCH VỤ</h3>
+                                    <ul class="footer-nav">
+                                        <li><a href="#" target="_self" title="Mua nhà">Mua nhà</a></li>
+                                        <li><a href="#" target="_self" title="Thuê nhà">Thuê nhà</a></li>
+                                        <li><a href="#" target="_self" title="Dự án">Dự án</a></li>
+                                    </ul>
+                                    <hr class="hr-basic m-0 mb-15 d-lg-none">
+                                </div>
+                                <div class="col-lg-6">
+                                    <h3 class="footer-title">KẾT NỐI VỚI CHÚNG TÔI</h3>
+                                    <ul class="social-box">
+                                        <li class="mr-20">
+                                            <a href="#" target="_blank" title="Facebook">
+                                                <img data-src="./images/icon-fb-gray.svg" src="./images/sx.svg" alt="Facebook" title="Facebook" class="lazyload fb-gray" />
+                                                <img data-src="./images/icon-fb-color.svg" src="./images/sx.svg" alt="Facebook" title="Facebook" class="lazyload fb-color d-none" />
+                                            </a>
+                                        </li>
+                                        <li class="mr-20">
+                                            <a href="#" target="_blank" title="Instagram">
+                                                <img data-src="./images/icon-instagram-gray.svg" src="./images/sx.svg" alt="Instagram" title="Instagram" class="lazyload instagram-gray" />
+                                                <img data-src="./images/icon-instagram-color.svg" src="./images/sx.svg" alt="Instagram" title="Instagram" class="lazyload instagram-color d-none" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" title="Youtube">
+                                                <img data-src="./images/icon-youtube-gray.svg" src="./images/sx.svg" alt="Youtube" title="Youtube" class="lazyload youtube-gray" />
+                                                <img data-src="./images/icon-youtube-color.svg" src="./images/sx.svg" alt="Youtube" title="Youtube" class="lazyload youtube-color d-none" />
+
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <p class="mt-30 mb-25"><strong>Đăng ký để nhận thông tin mới nhất</strong></p>
+                                    <form action="" class="subscribe-form">
+                                        <div class="form-group form-large flex-grow-1">
+                                            <input type="email" placeholder="Nhập email của bạn" class="form-control" />
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary max-w-100">
+                                                <img src="./images/icon-arrow-right-white.svg" alt="Gửi" title="Gửi" class="d-lg-none"><span class="hidden-xs">Gửi</span></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>© 2020 Khai Hung Land. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap-4.5.min.js"></script>
+        <script src="js/select2/select2.min.js"></script>
+        <script src="js/lazysizes.min.js"></script>
+        <script src="js/ls.bgset.min.js"></script>
+        <script src="js/paging.js"></script>
+        <script src="js/style.js?v=1"></script>
+        <script type="text/javascript">
+            $(function () {
+                $('#full-name').focus(function(){
+                $(this).blur(function(){
+                    if($(this).val().length != 0){
+                        $('.info-full-name .title-input-contact').addClass("active");
+                    }else{
+                        $('.info-full-name .title-input-contact').removeClass("active");
+                    }
+                     })
+                })
+                $('#phone').focus(function(){
+                $(this).blur(function(){
+                    if($(this).val().length != 0){
+                        $('.info-phone .title-input-contact').addClass("active");
+                    }else{
+                        $('.info-phone .title-input-contact').removeClass("active");
+                    }
+                     })
+                })
+                // *******************************
+                $(".bds-types").select2({
+                    placeholder: "Tất cả",
+                });
+                $(".province-types").select2({
+                    placeholder: "Tp Hồ Chí Minh",
+                });
+                $(".quan-huyen-types").select2({
+                    placeholder: "Chọn quận/huyện",
+                });
+                $(".price-select").select2({
+                    placeholder: "Mức giá",
+                });
+                $(".price-select").on("select2:open", function(e) {
+                    console.log("áldfhjklsdf",document.querySelector(".select2-container--open .select2-dropdown"));
+                })
+                $(".area-select").select2({
+                    placeholder: "Chọn diện tích",
+                });
+                // 
+                $(".drop-content-1").on("click", function(e){
+                    let it = e.target.closest(".option");
+                    if(!it) return;
+                    let btnDrop = $(".drop-btn-1");
+                    btnDrop.html(it.dataset.value);
+                    btnDrop.attr("data-value", it.dataset.value);
+                })
+                $(".price-item").on("click", function(e) {
+                    // e.preventDefault();
+                    console.log("ádkjfhalskjdhf")
+                    e.stopPropagation();
+                })
+
+                // Xử lý tìm kiếm theo price : thanh kéo qua kéo lại
+
+                $("#filter-price-range").slider({
+                    range: true,
+                    min: 0,
+                    max: 50,
+                    values: [10 ,20],
+                    create : function(event, ui) {
+                        let hanldes = document.querySelectorAll("#filter-price-range .ui-slider-handle");
+                        let val0 = $("#filter-price-range").slider("values", 0);
+                        let val1 = $("#filter-price-range").slider("values", 1);
+                        // value of 2 side
+                        document.querySelector("#filter-price-range .left-run").innerHTML = val0;
+                        document.querySelector("#filter-price-range .right-run").innerHTML = val1;
+                        // value of merge
+                        document.querySelector("#filter-price-range .merge-run .left-value").innerHTML = val0;
+                        document.querySelector("#filter-price-range .merge-run .right-value").innerHTML = val1;
+                    },
+                    slide: function(event, ui) {
+                        let leftHanlde = ui.handle.style.left;
+                        let hRec = ui.handle.getBoundingClientRect().left;
+                        let hanldes = document.querySelectorAll("#filter-price-range .ui-slider-handle")
+                        // check which handle is selected
+                        if(hanldes[0].classList.contains("ui-state-focus")) {
+                            document.querySelector("#filter-price-range .left-run").innerHTML = ui.values[0];
+                            document.querySelector("#filter-price-range .merge-run .left-value").innerHTML = ui.values[0];
+                        } 
+                        else if(hanldes[1].classList.contains("ui-state-focus")) {
+                            document.querySelector("#filter-price-range .right-run").innerHTML = ui.values[1];
+                            document.querySelector("#filter-price-range .merge-run .right-value").innerHTML = ui.values[1];
+                        }
+                    },
+                });
+                // 
+                function checkPosition() {
+                    let left = document.querySelector("#filter-price-range .left-run");
+                    let right = document.querySelector("#filter-price-range .right-run");
+                    let leftRec = left.getBoundingClientRect();
+                    let rightRec = right.getBoundingClientRect();
+                    // console.log(rightRec.left - leftRec.right)
+                    return (rightRec.left - leftRec.right) > 0 ? false : true;  
+                }
+                // 
+                function processScroll() {
+                    if(checkPosition()) {
+                            document.querySelector("#filter-price-range .filter-text-run").classList.add("merge");
+                            let lp = document.querySelector("#filter-price-range .left-run").getBoundingClientRect().left;
+                            let lmr = document.querySelector("#filter-price-range .filter-text-run .merge-run").getBoundingClientRect().left;
+                            let rp = document.querySelector("#filter-price-range .right-run").getBoundingClientRect().right;
+                            let rmr = document.querySelector("#filter-price-range .filter-text-run .merge-run").getBoundingClientRect().right;
+                            // check if it goes left
+                            if( lmr > lp) {
+                                let t = lmr - lp;
+                                let lmr1 = getComputedStyle(document.querySelector("#filter-price-range .filter-text-run .merge-run"));
+                                lmr1 = Number.parseFloat(lmr1.left);
+                                document.querySelector("#filter-price-range .filter-text-run .merge-run").style.left =  lmr1 - t + "px";
+                            }
+                            // check if it goes right
+                            if(rp > rmr) {
+                                let t = rp - rmr;
+                                let lmr = getComputedStyle(document.querySelector("#filter-price-range .filter-text-run .merge-run"));
+                                lmr = Number.parseFloat(lmr.left);
+                                document.querySelector("#filter-price-range .filter-text-run .merge-run").style.left = t + lmr + 'px';
+                            }
+                            // only change left of merge-run when it first merge
+                            if(!document.querySelector("#filter-price-range .filter-text-run .merge-run").checkmerge) {
+                                document.querySelector("#filter-price-range .filter-text-run .merge-run").style.left = lp.left;
+                                document.querySelector("#filter-price-range .filter-text-run .merge-run").checkmerge = true;
+                            }
+                        } 
+                        else {
+                            document.querySelector("#filter-price-range .filter-text-run").classList.remove("merge");
+                            document.querySelector("#filter-price-range .filter-text-run .merge-run").checkmerge = false;
+                        }
+                }
+                // 
+                function  processLoad() {
+                    console.log("chạy vào");
+                    let handle1 = document.querySelector("#filter-price-range .ui-slider-handle");
+                    let handle2 = document.querySelector("#filter-price-range .ui-slider-handle:nth-of-type(2)");
+                    let sli = document.querySelector("#filter-price-range");
+                    let sliRecL = sli.getBoundingClientRect().left;
+                    let recL1 = handle1.getBoundingClientRect().left;
+                    let recL2 = handle2.getBoundingClientRect().left;
+                    let lrw = document.querySelector("#filter-price-range .left-run").clientWidth;
+                    let rrw = document.querySelector("#filter-price-range .right-run").clientWidth;
+                    console.log("ákdhf", lrw);
+                    document.querySelector("#filter-price-range .left-run").style.left = recL1- sliRecL - (lrw  / 2) + (handle1.clientWidth / 2) + "px";
+                    document.querySelector("#filter-price-range .right-run").style.left = recL2 - sliRecL + "px";
+                    
+                    document.querySelector("#filter-price-range .merge-run").style.width = lrw + rrw + "px";
+                    // check if 2 side is overlay each other
+                    if(checkPosition()) {
+                        document.querySelector("#filter-price-range .filter-text-run").classList.add("merge");
+                        let lp =getComputedStyle(document.querySelector("#filter-price-range .left-run"));
+                        document.querySelector("#filter-price-range .filter-text-run .merge-run").style.left = lp.left;
+                        // this is the first merge
+                        document.querySelector("#filter-price-range .filter-text-run .merge-run").checkmerge = true;
+                    } else {
+                        document.querySelector("#filter-price-range .filter-text-run").classList.remove("merge");
+                        // chedc is it merge or nỏ
+                        document.querySelector("#filter-price-range .filter-text-run .merge-run").checkmerge = false;
+                    }
+                }
+                // processLoad()
+                // 
+                let handle1 = document.querySelector("#filter-price-range .ui-slider-handle");
+                let handle2 = document.querySelector("#filter-price-range .ui-slider-handle:nth-of-type(2)");
+
+                $(".dropdown-price").on("shown.bs.dropdown", function(){
+                    processLoad()
+                })
+
+                handle1.addEventListener("mousedown", function() {
+                    let th = this;
+                    let  mouseMove= function()  {
+                        let sli = document.querySelector("#filter-price-range");
+                        let sliRecL = sli.getBoundingClientRect().left;
+                        let recL = th.getBoundingClientRect().left;
+                        // console.log("ákdhf", recL);
+                        document.querySelector("#filter-price-range .left-run").style.left = recL - sliRecL + "px";
+                        processScroll();
+                    }
+                    document.addEventListener("mousemove", mouseMove);
+                    document.addEventListener("mouseup", function () {
+                        document.removeEventListener("mousemove", mouseMove);
+                    })
+                })
+
+                handle2.addEventListener("mousedown", function() {
+                    let th = this;
+                    let  mouseMove = function(){
+                        let sli = document.querySelector("#filter-price-range");
+                        let sliRecL = sli.getBoundingClientRect().left;
+                        let recL = th.getBoundingClientRect().left;
+                        // console.log("ákdhf", recR);
+                        document.querySelector("#filter-price-range .right-run").style.left = recL - sliRecL + "px";
+                        processScroll();
+                    }
+                    document.addEventListener("mousemove", mouseMove);
+                    document.addEventListener("mouseup", function () {
+                        document.removeEventListener("mousemove", mouseMove);
+                    })
+                })
+                // 
+                
+               
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Thu May 27 2021 10:54:00 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* css/app.css
+* css/app.css.map
+* scss/_class.scss
+
+
+Created files:
+* .autogit/logs/log-27-4-2021-10-23-41.txt
+
+
+Deleted files:
+
+
+Renamed files:
